@@ -51,10 +51,19 @@
     <Compile Include="Presentation Layer\LoginFrom.Designer.cs">
       <DependentUpon>LoginFrom.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentation Layer\ManagerFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\ManagerFrom.Designer.cs">
+      <DependentUpon>ManagerFrom.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Presentation Layer\LoginFrom.resx">
       <DependentUpon>LoginFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\ManagerFrom.resx">
+      <DependentUpon>ManagerFrom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -86,6 +95,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\restaurant.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %283%29.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
