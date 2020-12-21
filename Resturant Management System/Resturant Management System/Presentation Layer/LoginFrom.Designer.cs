@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.checkLabel = new System.Windows.Forms.Label();
@@ -37,17 +36,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.userNameTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panel2
-            // 
-            this.panel2.BackgroundImage = global::Resturant_Management_System.Properties.Resources.restaurant;
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel2.Location = new System.Drawing.Point(345, 49);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(648, 420);
-            this.panel2.TabIndex = 2;
             // 
             // panel1
             // 
@@ -59,7 +50,7 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.userNameTextBox);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(51, 49);
+            this.panel1.Location = new System.Drawing.Point(85, 79);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(288, 420);
             this.panel1.TabIndex = 3;
@@ -134,12 +125,21 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Usename";
             // 
+            // panel2
+            // 
+            this.panel2.BackgroundImage = global::Resturant_Management_System.Properties.Resources.restaurant;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel2.Location = new System.Drawing.Point(379, 79);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(648, 420);
+            this.panel2.TabIndex = 2;
+            // 
             // LoginFrom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkRed;
-            this.ClientSize = new System.Drawing.Size(1020, 522);
+            this.ClientSize = new System.Drawing.Size(1102, 570);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "LoginFrom";
