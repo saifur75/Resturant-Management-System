@@ -8,3 +8,13 @@ F:\8th semester\C#\Resturant Management System\Resturant Management System\obj\D
 F:\8th semester\C#\Resturant Management System\Resturant Management System\obj\Debug\Resturant Management System.csproj.CoreCompileInputs.cache
 F:\8th semester\C#\Resturant Management System\Resturant Management System\obj\Debug\Resturant Management System.exe
 F:\8th semester\C#\Resturant Management System\Resturant Management System\obj\Debug\Resturant Management System.pdb
+F:\8th semester\git\Resturant-Management-System\Resturant Management System\Resturant Management System\bin\Debug\Resturant Management System.exe.config
+F:\8th semester\git\Resturant-Management-System\Resturant Management System\Resturant Management System\bin\Debug\Resturant Management System.exe
+F:\8th semester\git\Resturant-Management-System\Resturant Management System\Resturant Management System\bin\Debug\Resturant Management System.pdb
+F:\8th semester\git\Resturant-Management-System\Resturant Management System\Resturant Management System\obj\Debug\Resturant Management System.csprojAssemblyReference.cache
+F:\8th semester\git\Resturant-Management-System\Resturant Management System\Resturant Management System\obj\Debug\Resturant_Management_System.Presentation_Layer.LoginFrom.resources
+F:\8th semester\git\Resturant-Management-System\Resturant Management System\Resturant Management System\obj\Debug\Resturant_Management_System.Properties.Resources.resources
+F:\8th semester\git\Resturant-Management-System\Resturant Management System\Resturant Management System\obj\Debug\Resturant Management System.csproj.GenerateResource.cache
+F:\8th semester\git\Resturant-Management-System\Resturant Management System\Resturant Management System\obj\Debug\Resturant Management System.csproj.CoreCompileInputs.cache
+F:\8th semester\git\Resturant-Management-System\Resturant Management System\Resturant Management System\obj\Debug\Resturant Management System.exe
+F:\8th semester\git\Resturant-Management-System\Resturant Management System\Resturant Management System\obj\Debug\Resturant Management System.pdb
