@@ -57,6 +57,12 @@
     <Compile Include="Presentation Layer\ManagerFrom.Designer.cs">
       <DependentUpon>ManagerFrom.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentation Layer\WaiterFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\WaiterFrom.Designer.cs">
+      <DependentUpon>WaiterFrom.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Presentation Layer\LoginFrom.resx">
@@ -64,6 +70,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation Layer\ManagerFrom.resx">
       <DependentUpon>ManagerFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\WaiterFrom.resx">
+      <DependentUpon>WaiterFrom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

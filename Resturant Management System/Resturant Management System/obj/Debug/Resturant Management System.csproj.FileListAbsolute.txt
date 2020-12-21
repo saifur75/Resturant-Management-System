@@ -19,3 +19,4 @@ F:\8th semester\git\Resturant-Management-System\Resturant Management System\Rest
 F:\8th semester\git\Resturant-Management-System\Resturant Management System\Resturant Management System\obj\Debug\Resturant Management System.exe
 F:\8th semester\git\Resturant-Management-System\Resturant Management System\Resturant Management System\obj\Debug\Resturant Management System.pdb
 F:\8th semester\git\Resturant-Management-System\Resturant Management System\Resturant Management System\obj\Debug\Resturant_Management_System.Presentation_Layer.ManagerFrom.resources
+F:\8th semester\git\Resturant-Management-System\Resturant Management System\Resturant Management System\obj\Debug\Resturant_Management_System.Presentation_Layer.WaiterFrom.resources
