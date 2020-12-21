@@ -30,13 +30,13 @@
         {
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.checkLabel = new System.Windows.Forms.Label();
             this.logInButton = new System.Windows.Forms.Button();
             this.passwordTextBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.userNameTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,6 +63,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(288, 420);
             this.panel1.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label1.Location = new System.Drawing.Point(19, 70);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(87, 32);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Log In";
             // 
             // checkLabel
             // 
@@ -123,17 +134,6 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Usename";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label1.Location = new System.Drawing.Point(19, 70);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(87, 32);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Log In";
-            // 
             // LoginFrom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -144,7 +144,6 @@
             this.Controls.Add(this.panel1);
             this.Name = "LoginFrom";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "LoginFrom";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.LoginFrom_FormClosing);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
