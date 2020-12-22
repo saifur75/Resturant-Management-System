@@ -16,5 +16,10 @@ namespace Resturant_Management_System.Presentation_Layer
         {
             InitializeComponent();
         }
+
+        private void ChangePasswordFrom_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

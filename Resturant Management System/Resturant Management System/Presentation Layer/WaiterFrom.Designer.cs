@@ -33,10 +33,10 @@
             this.myProfileButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.logOutButton = new System.Windows.Forms.Button();
             this.takeOrderButton = new System.Windows.Forms.Button();
             this.MenuButton = new System.Windows.Forms.Button();
-            this.logOutButton = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -76,9 +76,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Chocolate;
+            this.label1.BackColor = System.Drawing.SystemColors.Highlight;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(29, 36);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(221, 32);
@@ -87,7 +87,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.panel2.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.panel2.Controls.Add(this.logOutButton);
             this.panel2.Controls.Add(this.takeOrderButton);
             this.panel2.Controls.Add(this.MenuButton);
@@ -97,16 +97,17 @@
             this.panel2.Size = new System.Drawing.Size(608, 472);
             this.panel2.TabIndex = 2;
             // 
-            // label2
+            // logOutButton
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(25, 39);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(112, 28);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Welcome";
+            this.logOutButton.BackColor = System.Drawing.Color.Maroon;
+            this.logOutButton.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logOutButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.logOutButton.Location = new System.Drawing.Point(458, 7);
+            this.logOutButton.Name = "logOutButton";
+            this.logOutButton.Size = new System.Drawing.Size(123, 40);
+            this.logOutButton.TabIndex = 5;
+            this.logOutButton.Text = "Log Out";
+            this.logOutButton.UseVisualStyleBackColor = false;
             // 
             // takeOrderButton
             // 
@@ -132,24 +133,23 @@
             this.MenuButton.Text = "Menu";
             this.MenuButton.UseVisualStyleBackColor = false;
             // 
-            // logOutButton
+            // label2
             // 
-            this.logOutButton.BackColor = System.Drawing.Color.Maroon;
-            this.logOutButton.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logOutButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.logOutButton.Location = new System.Drawing.Point(458, 7);
-            this.logOutButton.Name = "logOutButton";
-            this.logOutButton.Size = new System.Drawing.Size(123, 40);
-            this.logOutButton.TabIndex = 5;
-            this.logOutButton.Text = "Log Out";
-            this.logOutButton.UseVisualStyleBackColor = false;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Location = new System.Drawing.Point(25, 39);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(112, 28);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Welcome";
             // 
             // WaiterFrom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.PeachPuff;
-            this.ClientSize = new System.Drawing.Size(918, 476);
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ClientSize = new System.Drawing.Size(923, 484);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "WaiterFrom";

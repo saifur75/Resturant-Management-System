@@ -45,6 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Presentation Layer\ChangePasswordFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\ChangePasswordFrom.Designer.cs">
+      <DependentUpon>ChangePasswordFrom.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentation Layer\LoginFrom.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,6 +71,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Presentation Layer\ChangePasswordFrom.resx">
+      <DependentUpon>ChangePasswordFrom.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentation Layer\LoginFrom.resx">
       <DependentUpon>LoginFrom.cs</DependentUpon>
     </EmbeddedResource>
