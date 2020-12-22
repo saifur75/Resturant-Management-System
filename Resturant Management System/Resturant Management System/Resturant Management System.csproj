@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data Access Layer\DataAccess.cs" />
+    <Compile Include="Data Access Layer\LoginDataAccess.cs" />
     <Compile Include="Entities\Menu.cs" />
     <Compile Include="Entities\User.cs" />
     <Compile Include="Presentation Layer\ChangePasswordFrom.cs">
@@ -75,6 +76,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resturant Logic Layer\LoginService.cs" />
     <EmbeddedResource Include="Presentation Layer\ChangePasswordFrom.resx">
       <DependentUpon>ChangePasswordFrom.cs</DependentUpon>
     </EmbeddedResource>
@@ -110,9 +112,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Resturant Logic Layer\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\restaurant.jpeg" />
   </ItemGroup>

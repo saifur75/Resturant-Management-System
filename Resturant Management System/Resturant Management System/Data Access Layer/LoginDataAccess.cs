@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Resturant_Management_System.Entities;
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -14,9 +15,9 @@ namespace Resturant_Management_System.Data_Access_Layer
         {
             this.dataAccess = new DataAccess();
         }
-        public bool Login(string username,string password)
+        public bool Login(User user)
         {
-            string query = "SELECT * FROM Users WHERE Username='" + username + "' and Password='" + password + "'";
+            string query = "SELECT * FROM Users WHERE Username='" + user.Username + "' and Password='" + user.Password + "'";
             SqlDataReader reader = this.dataAccess.GetData(query);
 
             if (reader.Read())
