@@ -36,7 +36,7 @@
             this.logOutButton = new System.Windows.Forms.Button();
             this.takeOrderButton = new System.Windows.Forms.Button();
             this.MenuButton = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
+            this.welcomeLabel = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -91,7 +91,7 @@
             this.panel2.Controls.Add(this.logOutButton);
             this.panel2.Controls.Add(this.takeOrderButton);
             this.panel2.Controls.Add(this.MenuButton);
-            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.welcomeLabel);
             this.panel2.Location = new System.Drawing.Point(310, 5);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(608, 472);
@@ -133,16 +133,16 @@
             this.MenuButton.Text = "Menu";
             this.MenuButton.UseVisualStyleBackColor = false;
             // 
-            // label2
+            // welcomeLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(25, 39);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(112, 28);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Welcome";
+            this.welcomeLabel.AutoSize = true;
+            this.welcomeLabel.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.welcomeLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.welcomeLabel.Location = new System.Drawing.Point(25, 39);
+            this.welcomeLabel.Name = "welcomeLabel";
+            this.welcomeLabel.Size = new System.Drawing.Size(112, 28);
+            this.welcomeLabel.TabIndex = 0;
+            this.welcomeLabel.Text = "Welcome";
             // 
             // WaiterFrom
             // 
@@ -174,6 +174,6 @@
         private System.Windows.Forms.Button logOutButton;
         private System.Windows.Forms.Button takeOrderButton;
         private System.Windows.Forms.Button MenuButton;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label welcomeLabel;
     }
 }

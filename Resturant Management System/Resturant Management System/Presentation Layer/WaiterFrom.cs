@@ -16,7 +16,11 @@ namespace Resturant_Management_System.Presentation_Layer
         {
             InitializeComponent();
         }
-
+        public WaiterFrom(string name)
+        {
+            InitializeComponent();
+            welcomeLabel.Text += " " + name;
+        }
         private void WaiterFrom_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
