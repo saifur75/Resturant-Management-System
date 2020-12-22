@@ -28,5 +28,13 @@ namespace Resturant_Management_System.Data_Access_Layer
                 return false;
             }
         }
+        public string GetPost(string username)
+        {
+            string query = "SELECT * FROM Users WHERE Username='" + username + "' ";
+            dataAccess = new DataAccess();
+            SqlDataReader reader = this.dataAccess.GetData(query);
+            reader.Read();
+            return reader["Post"].ToString();
+        }
     }
 }
