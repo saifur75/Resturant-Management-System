@@ -33,6 +33,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -45,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data Access Layer\DataAccess.cs" />
+    <Compile Include="Entities\User.cs" />
     <Compile Include="Presentation Layer\ChangePasswordFrom.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,8 +110,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Data Access Layer\" />
-    <Folder Include="Entities\" />
     <Folder Include="Resturant Logic Layer\" />
   </ItemGroup>
   <ItemGroup>
