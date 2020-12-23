@@ -29,5 +29,10 @@ namespace Resturant_Management_System.Data_Access_Layer
             }
             return categories;
         }
+        public int InsertCategory(Category category)
+        {
+            string query= "INSERT INTO Categories(CategoryName) VALUES('" + category.CategoryName + "')";
+            return this.dataAccess.ExecuteQuery(query);
+        }
     }
 }
