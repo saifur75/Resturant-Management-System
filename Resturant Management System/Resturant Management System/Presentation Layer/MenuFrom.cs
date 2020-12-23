@@ -17,6 +17,12 @@ namespace Resturant_Management_System.Presentation_Layer
         public MenuFrom()
         {
             InitializeComponent();
+            addButton.Click += this.Refresh;
+            addButton.Click += this.Clear;
+            delete_button.Click += this.Refresh;
+            delete_button.Click += this.Clear;
+            update_button.Click += this.Refresh;
+            update_button.Click += this.Clear;
         }
 
         private void MenuFrom_FormClosing(object sender, FormClosingEventArgs e)
@@ -109,6 +115,15 @@ namespace Resturant_Management_System.Presentation_Layer
                     MessageBox.Show("Error occur!");
                 }
             }
+        }
+        void Refresh(object sender, EventArgs e)
+        {
+            MenuService menuService = new MenuService();
+            food_ListDataGridView.DataSource = menuService.GetAllFood();
+        }
+        void Clear(object sender, EventArgs e)
+        {
+            foodNameTextBox.Text = priceTextBox.Text = statusTextBox.Text = string.Empty;
         }
     }
 }
