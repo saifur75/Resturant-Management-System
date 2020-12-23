@@ -33,13 +33,13 @@ namespace Resturant_Management_System.Resturant_Logic_Layer
             menuDataAccess = new MenuDataAccess();
             return this.menuDataAccess.InsertFood(menu);
         }
-        public int UpdateMenu(string foodName, double price, string status, string categoryName)
+        public int UpdateMenu(string foodName, string price, string status, string categoryName)
         {
             int categoryId = menuDataAccess.GetCategoryId(categoryName);
             Menu1 menu = new Menu1()
             {
                 FoodName = foodName,
-                Price = price,
+                Price =Convert.ToDouble(price),
                 Status = status,
                 CategoryId = categoryId
             };

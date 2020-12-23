@@ -70,7 +70,45 @@ namespace Resturant_Management_System.Presentation_Layer
 
         private void button3_Click(object sender, EventArgs e)
         {
-           
+            if (foodNameTextBox.Text == "" || priceTextBox.Text == "" || statusTextBox.Text == "")
+            {
+                MessageBox.Show("Fill up the required from");
+            }
+            else
+            {
+                MenuService menuService = new MenuService();
+                int result = menuService.DeleteFood(foodId);
+                if (result > 0)
+                {
+                    MessageBox.Show("Delete Successfully");
+                }
+                else
+                {
+                    MessageBox.Show("Error occur!");
+                }
+            }
+        }
+
+        private void update_button_Click(object sender, EventArgs e)
+        {
+
+            if (foodNameTextBox.Text == "" || priceTextBox.Text == "" || statusTextBox.Text == "")
+            {
+                MessageBox.Show("Fill up the required from");
+            }
+            else
+            {
+                MenuService menuService = new MenuService();
+                int result = menuService.UpdateMenu(foodNameTextBox.Text,priceTextBox.Text,statusTextBox.Text,categoryComboBox.Text);
+                if (result > 0)
+                {
+                    MessageBox.Show("Update Successfully");
+                }
+                else
+                {
+                    MessageBox.Show("Error occur!");
+                }
+            }
         }
     }
 }
