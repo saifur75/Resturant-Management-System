@@ -16,5 +16,15 @@ namespace Resturant_Management_System.Presentation_Layer
         {
             InitializeComponent();
         }
+
+        private void FoodCategory_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

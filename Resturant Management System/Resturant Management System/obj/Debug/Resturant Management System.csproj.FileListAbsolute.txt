@@ -22,3 +22,4 @@ F:\8th semester\git\Resturant-Management-System\Resturant Management System\Rest
 F:\8th semester\git\Resturant-Management-System\Resturant Management System\Resturant Management System\obj\Debug\Resturant_Management_System.Presentation_Layer.WaiterFrom.resources
 F:\8th semester\git\Resturant-Management-System\Resturant Management System\Resturant Management System\obj\Debug\Resturant_Management_System.Presentation_Layer.ChangePasswordFrom.resources
 F:\8th semester\git\Resturant-Management-System\Resturant Management System\Resturant Management System\obj\Debug\Resturant_Management_System.Presentation_Layer.MenuFrom.resources
+F:\8th semester\git\Resturant-Management-System\Resturant Management System\Resturant Management System\obj\Debug\Resturant_Management_System.Presentation_Layer.FoodCategory.resources
