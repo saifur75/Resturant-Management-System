@@ -17,6 +17,12 @@ namespace Resturant_Management_System.Presentation_Layer
         public FoodCategory()
         {
             InitializeComponent();
+            add_CategoryButton.Click += this.Refresh;
+            add_CategoryButton.Click += this.Clear;
+            update_Category_Button.Click += this.Refresh;
+            update_Category_Button.Click += this.Clear;
+            delete_Category_Button.Click += this.Refresh;
+            delete_Category_Button.Click += this.Clear;
         }
 
         private void FoodCategory_FormClosing(object sender, FormClosingEventArgs e)
@@ -98,6 +104,15 @@ namespace Resturant_Management_System.Presentation_Layer
                     MessageBox.Show("Error occur!");
                 }
             }
+        }
+        void Refresh(object sender, EventArgs e)
+        {
+            CategoryService categoryService = new CategoryService();
+            category_Load_DataGridView.DataSource = categoryService.GetAllCategories();
+        }
+        void Clear(object sender, EventArgs e)
+        {
+            categoryName_TextBox.Text = string.Empty;
         }
     }
 }
