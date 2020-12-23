@@ -34,5 +34,10 @@ namespace Resturant_Management_System.Data_Access_Layer
             string query= "INSERT INTO Categories(CategoryName) VALUES('" + category.CategoryName + "')";
             return this.dataAccess.ExecuteQuery(query);
         }
+        public int DeleteCategory(int id)
+        {
+            string sql = "DELETE FROM Categories WHERE CategoryId=" + id;
+            return this.dataAccess.ExecuteQuery(sql);           
+        }
     }
 }

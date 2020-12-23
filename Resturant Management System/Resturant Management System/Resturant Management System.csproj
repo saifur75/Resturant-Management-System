@@ -46,8 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data Access Layer\CategoryDataAccess.cs" />
     <Compile Include="Data Access Layer\DataAccess.cs" />
     <Compile Include="Data Access Layer\LoginDataAccess.cs" />
+    <Compile Include="Entities\Category.cs" />
     <Compile Include="Entities\Menu.cs" />
     <Compile Include="Entities\User.cs" />
     <Compile Include="Presentation Layer\ChangePasswordFrom.cs">
