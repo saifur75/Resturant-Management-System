@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Resturant_Management_System.Entities
 {
-    class Menu
+    class Menu1
     {
         public int FoodId { get; set; }
         public string FoodName { get; set; }
