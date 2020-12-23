@@ -58,5 +58,23 @@ namespace Resturant_Management_System.Data_Access_Layer
             dataAccess = new DataAccess();
             return this.dataAccess.ExecuteQuery(query);
         }
+        public List<Menu1> GetFoodForSearch(string foodName)
+        {
+            string sql = "SELECT * FROM Menu WHERE FoodName LIKE '" + foodName + "%'";
+            this.dataAccess = new DataAccess();
+            SqlDataReader reader = this.dataAccess.GetData(sql);
+            List<Menu1> menus = new List<Menu1>();
+            while (reader.Read())
+            {
+                Menu1 menu = new Menu1();
+                menu.FoodId = (int)reader["FoodId"];
+                menu.FoodName = reader["FoodName"].ToString();
+                menu.Price = Convert.ToDouble(reader["Price"]);
+                menu.Status = reader["Status"].ToString();
+                menu.CategoryId = (int)reader["CategoryId"];
+                menus.Add(menu);
+            }
+            return menus;
+        }
     }
 }
