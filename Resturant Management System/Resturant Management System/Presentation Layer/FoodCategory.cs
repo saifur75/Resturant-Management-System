@@ -64,7 +64,7 @@ namespace Resturant_Management_System.Presentation_Layer
                 int result = categoryService.UpdateCategory(id,categoryName_TextBox.Text);
                 if (result > 0)
                 {
-                    MessageBox.Show("Added successfully");
+                    MessageBox.Show("Update successfully");
                 }
                 else
                 {
@@ -77,6 +77,27 @@ namespace Resturant_Management_System.Presentation_Layer
         {
             id =(int) category_Load_DataGridView.Rows[e.RowIndex].Cells[0].Value;
             categoryName_TextBox.Text= category_Load_DataGridView.Rows[e.RowIndex].Cells[1].Value.ToString();
+        }
+
+        private void delete_Category_Button_Click(object sender, EventArgs e)
+        {
+            if (categoryName_TextBox.Text == "")
+            {
+                MessageBox.Show("Fill up the required From");
+            }
+            else
+            {
+                CategoryService categoryService = new CategoryService();
+                int result = categoryService.DeleteCategory(id);
+                if (result > 0)
+                {
+                    MessageBox.Show("Delete successfully");
+                }
+                else
+                {
+                    MessageBox.Show("Error occur!");
+                }
+            }
         }
     }
 }

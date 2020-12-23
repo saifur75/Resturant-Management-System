@@ -120,6 +120,7 @@
             this.delete_Category_Button.TabIndex = 0;
             this.delete_Category_Button.Text = "Delete";
             this.delete_Category_Button.UseVisualStyleBackColor = false;
+            this.delete_Category_Button.Click += new System.EventHandler(this.delete_Category_Button_Click);
             // 
             // label2
             // 
