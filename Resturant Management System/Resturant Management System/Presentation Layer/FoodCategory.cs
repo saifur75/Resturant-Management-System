@@ -25,7 +25,24 @@ namespace Resturant_Management_System.Presentation_Layer
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            if(categoryName_TextBox.Text == "")
+            {
+                MessageBox.Show("Fill up the required From");
+            }
+            else
+            {
+                CategoryService categoryService = new CategoryService();
+                int result = categoryService.AddCategory(categoryName_TextBox.Text);
+                if(result>0)
+                {
+                    MessageBox.Show("Added successfully");
+                }
+                else
+                {
+                    MessageBox.Show("Error occur!");
+                }
+            }
+           
         }
 
         private void FoodCategory_Load(object sender, EventArgs e)

@@ -30,7 +30,7 @@
         {
             this.category_Load_DataGridView = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.categoryName_TextBox = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.add_CategoryButton = new System.Windows.Forms.Button();
             this.update_Category_Button = new System.Windows.Forms.Button();
@@ -63,13 +63,13 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Category Name";
             // 
-            // textBox1
+            // categoryName_TextBox
             // 
-            this.textBox1.Font = new System.Drawing.Font("Cambria", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(180, 113);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(242, 29);
-            this.textBox1.TabIndex = 2;
+            this.categoryName_TextBox.Font = new System.Drawing.Font("Cambria", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.categoryName_TextBox.Location = new System.Drawing.Point(180, 113);
+            this.categoryName_TextBox.Name = "categoryName_TextBox";
+            this.categoryName_TextBox.Size = new System.Drawing.Size(242, 29);
+            this.categoryName_TextBox.TabIndex = 2;
             // 
             // groupBox1
             // 
@@ -137,7 +137,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(847, 338);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.categoryName_TextBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.category_Load_DataGridView);
             this.Controls.Add(this.groupBox1);
@@ -156,7 +156,7 @@
 
         private System.Windows.Forms.DataGridView category_Load_DataGridView;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox categoryName_TextBox;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button delete_Category_Button;
         private System.Windows.Forms.Button update_Category_Button;
