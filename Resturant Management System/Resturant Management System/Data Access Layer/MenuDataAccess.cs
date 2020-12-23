@@ -35,5 +35,17 @@ namespace Resturant_Management_System.Data_Access_Layer
             }
             return menus;
         }
+        public int InsertProduct(Menu1 menu)
+        {
+            string sql = "INSERT INTO Menu(FoodName,Price,Status,CategoryId) VALUES('" + menu.FoodName + "','" + menu.Price + "','" + menu.Status + "','" + menu.CategoryId + "')";
+            return this.dataAccess.ExecuteQuery(sql);
+        }
+        public int GetCategoryId(string categoryName)
+        {
+            string query = "SELECT *FROM Categories WHERE CategoryName='" + categoryName + "'";
+            SqlDataReader reader = this.dataAccess.GetData(query);
+            reader.Read();
+            return (int)reader["CategoryId"];
+        }
     }
 }
