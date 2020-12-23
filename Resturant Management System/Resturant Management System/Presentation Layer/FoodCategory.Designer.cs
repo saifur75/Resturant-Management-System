@@ -35,6 +35,7 @@
             this.add_CategoryButton = new System.Windows.Forms.Button();
             this.update_Category_Button = new System.Windows.Forms.Button();
             this.delete_Category_Button = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.category_Load_DataGridView)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -44,7 +45,7 @@
             this.category_Load_DataGridView.AllowUserToAddRows = false;
             this.category_Load_DataGridView.AllowUserToDeleteRows = false;
             this.category_Load_DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.category_Load_DataGridView.Location = new System.Drawing.Point(487, 47);
+            this.category_Load_DataGridView.Location = new System.Drawing.Point(489, 74);
             this.category_Load_DataGridView.Name = "category_Load_DataGridView";
             this.category_Load_DataGridView.ReadOnly = true;
             this.category_Load_DataGridView.RowHeadersWidth = 51;
@@ -118,12 +119,24 @@
             this.delete_Category_Button.Text = "Delete";
             this.delete_Category_Button.UseVisualStyleBackColor = false;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Cambria", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label2.Location = new System.Drawing.Point(485, 38);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(137, 22);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "List Of Category";
+            // 
             // FoodCategory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(847, 338);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.category_Load_DataGridView);
@@ -147,5 +160,6 @@
         private System.Windows.Forms.Button delete_Category_Button;
         private System.Windows.Forms.Button update_Category_Button;
         private System.Windows.Forms.Button add_CategoryButton;
+        private System.Windows.Forms.Label label2;
     }
 }
