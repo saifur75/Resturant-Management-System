@@ -90,6 +90,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resturant Logic Layer\CategoryService.cs" />
     <Compile Include="Resturant Logic Layer\LoginService.cs" />
     <EmbeddedResource Include="Presentation Layer\ChangePasswordFrom.resx">
       <DependentUpon>ChangePasswordFrom.cs</DependentUpon>

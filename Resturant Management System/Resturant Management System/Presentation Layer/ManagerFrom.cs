@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Resturant_Management_System.Entities;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,7 +13,7 @@ namespace Resturant_Management_System.Presentation_Layer
 {
     public partial class ManagerFrom : Form
     {
-        Menu menu;
+        FoodCategory foodCategory;
         public ManagerFrom()
         {
             InitializeComponent();
@@ -32,6 +33,13 @@ namespace Resturant_Management_System.Presentation_Layer
             //menu = new Menu();
             //menu.Show();
             //this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            foodCategory = new FoodCategory();
+            foodCategory.Show();
+            this.Hide();
         }
     }
 }
