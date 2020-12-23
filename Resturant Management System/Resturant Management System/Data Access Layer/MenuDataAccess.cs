@@ -35,7 +35,7 @@ namespace Resturant_Management_System.Data_Access_Layer
             }
             return menus;
         }
-        public int InsertProduct(Menu1 menu)
+        public int InsertFood(Menu1 menu)
         {
             string sql = "INSERT INTO Menu(FoodName,Price,Status,CategoryId) VALUES('" + menu.FoodName + "','" + menu.Price + "','" + menu.Status + "','" + menu.CategoryId + "')";
             return this.dataAccess.ExecuteQuery(sql);
@@ -46,6 +46,17 @@ namespace Resturant_Management_System.Data_Access_Layer
             SqlDataReader reader = this.dataAccess.GetData(query);
             reader.Read();
             return (int)reader["CategoryId"];
+        }
+        public int DeleteFood(int id)
+        {
+            string query = "DELETE FROM Menu WHERE FoodId=" + id;
+            return this.dataAccess.ExecuteQuery(query);
+        }
+        public int UpdateFood(Menu1 menu)
+        {
+            string query = "UPDATE Menu SET FoodName='" + menu.FoodName + "',Price='" + menu.Price + "',Status='" + menu.Status + "',CategoryId='" + menu.CategoryId + "' WHERE FoodId='" + menu.FoodId + "'";
+            dataAccess = new DataAccess();
+            return this.dataAccess.ExecuteQuery(query);
         }
     }
 }
