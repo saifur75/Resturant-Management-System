@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.productListDataGridView = new System.Windows.Forms.DataGridView();
+            this.food_ListDataGridView = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.foodNameTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.priceTextBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.StatusTextBox = new System.Windows.Forms.TextBox();
+            this.statusTextBox = new System.Windows.Forms.TextBox();
             this.searchTextBox = new System.Windows.Forms.TextBox();
             this.searchButton = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -46,22 +46,23 @@
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logoutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            ((System.ComponentModel.ISupportInitialize)(this.productListDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.food_ListDataGridView)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // productListDataGridView
+            // food_ListDataGridView
             // 
-            this.productListDataGridView.AllowUserToAddRows = false;
-            this.productListDataGridView.AllowUserToDeleteRows = false;
-            this.productListDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.productListDataGridView.Location = new System.Drawing.Point(507, 87);
-            this.productListDataGridView.Name = "productListDataGridView";
-            this.productListDataGridView.ReadOnly = true;
-            this.productListDataGridView.RowHeadersWidth = 51;
-            this.productListDataGridView.RowTemplate.Height = 24;
-            this.productListDataGridView.Size = new System.Drawing.Size(530, 259);
-            this.productListDataGridView.TabIndex = 0;
+            this.food_ListDataGridView.AllowUserToAddRows = false;
+            this.food_ListDataGridView.AllowUserToDeleteRows = false;
+            this.food_ListDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.food_ListDataGridView.Location = new System.Drawing.Point(507, 87);
+            this.food_ListDataGridView.Name = "food_ListDataGridView";
+            this.food_ListDataGridView.ReadOnly = true;
+            this.food_ListDataGridView.RowHeadersWidth = 51;
+            this.food_ListDataGridView.RowTemplate.Height = 24;
+            this.food_ListDataGridView.Size = new System.Drawing.Size(530, 259);
+            this.food_ListDataGridView.TabIndex = 0;
+            this.food_ListDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.food_ListDataGridView_CellClick);
             // 
             // label1
             // 
@@ -114,14 +115,14 @@
             this.label4.TabIndex = 1;
             this.label4.Text = "Status";
             // 
-            // StatusTextBox
+            // statusTextBox
             // 
-            this.StatusTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StatusTextBox.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.StatusTextBox.Location = new System.Drawing.Point(171, 213);
-            this.StatusTextBox.Name = "StatusTextBox";
-            this.StatusTextBox.Size = new System.Drawing.Size(216, 27);
-            this.StatusTextBox.TabIndex = 2;
+            this.statusTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statusTextBox.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.statusTextBox.Location = new System.Drawing.Point(171, 213);
+            this.statusTextBox.Name = "statusTextBox";
+            this.statusTextBox.Size = new System.Drawing.Size(216, 27);
+            this.statusTextBox.TabIndex = 2;
             // 
             // searchTextBox
             // 
@@ -240,20 +241,21 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.searchButton);
             this.Controls.Add(this.searchTextBox);
-            this.Controls.Add(this.StatusTextBox);
+            this.Controls.Add(this.statusTextBox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.priceTextBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.foodNameTextBox);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.productListDataGridView);
+            this.Controls.Add(this.food_ListDataGridView);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MenuFrom";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MenuFrom";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MenuFrom_FormClosing);
-            ((System.ComponentModel.ISupportInitialize)(this.productListDataGridView)).EndInit();
+            this.Load += new System.EventHandler(this.MenuFrom_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.food_ListDataGridView)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -263,13 +265,13 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView productListDataGridView;
+        private System.Windows.Forms.DataGridView food_ListDataGridView;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox foodNameTextBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox priceTextBox;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox StatusTextBox;
+        private System.Windows.Forms.TextBox statusTextBox;
         private System.Windows.Forms.TextBox searchTextBox;
         private System.Windows.Forms.Button searchButton;
         private System.Windows.Forms.Button button1;
