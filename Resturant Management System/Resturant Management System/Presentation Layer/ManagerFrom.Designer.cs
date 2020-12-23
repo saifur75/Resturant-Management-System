@@ -40,6 +40,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.myProfileButton = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -47,6 +48,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.welcomeLabel);
             this.panel2.Controls.Add(this.logOutButton);
             this.panel2.Controls.Add(this.billGenerateButton);
@@ -86,7 +88,7 @@
             this.billGenerateButton.BackColor = System.Drawing.Color.PaleTurquoise;
             this.billGenerateButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.billGenerateButton.ForeColor = System.Drawing.Color.DimGray;
-            this.billGenerateButton.Location = new System.Drawing.Point(258, 228);
+            this.billGenerateButton.Location = new System.Drawing.Point(459, 227);
             this.billGenerateButton.Name = "billGenerateButton";
             this.billGenerateButton.Size = new System.Drawing.Size(186, 96);
             this.billGenerateButton.TabIndex = 4;
@@ -98,7 +100,7 @@
             this.viewOrderButton.BackColor = System.Drawing.Color.PaleTurquoise;
             this.viewOrderButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.viewOrderButton.ForeColor = System.Drawing.Color.DimGray;
-            this.viewOrderButton.Location = new System.Drawing.Point(471, 106);
+            this.viewOrderButton.Location = new System.Drawing.Point(59, 229);
             this.viewOrderButton.Name = "viewOrderButton";
             this.viewOrderButton.Size = new System.Drawing.Size(185, 100);
             this.viewOrderButton.TabIndex = 3;
@@ -116,13 +118,14 @@
             this.menuButton.TabIndex = 2;
             this.menuButton.Text = "Menu";
             this.menuButton.UseVisualStyleBackColor = false;
+            this.menuButton.Click += new System.EventHandler(this.menuButton_Click);
             // 
             // tableButton
             // 
             this.tableButton.BackColor = System.Drawing.Color.PaleTurquoise;
             this.tableButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tableButton.ForeColor = System.Drawing.Color.DimGray;
-            this.tableButton.Location = new System.Drawing.Point(59, 229);
+            this.tableButton.Location = new System.Drawing.Point(258, 229);
             this.tableButton.Name = "tableButton";
             this.tableButton.Size = new System.Drawing.Size(181, 95);
             this.tableButton.TabIndex = 1;
@@ -183,6 +186,18 @@
             this.panel3.Size = new System.Drawing.Size(269, 204);
             this.panel3.TabIndex = 0;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.button1.Location = new System.Drawing.Point(459, 106);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(185, 100);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Food Category";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // ManagerFrom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -216,5 +231,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button myProfileButton;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button button1;
     }
 }

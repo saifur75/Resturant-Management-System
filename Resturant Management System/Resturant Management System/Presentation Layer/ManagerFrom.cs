@@ -12,6 +12,7 @@ namespace Resturant_Management_System.Presentation_Layer
 {
     public partial class ManagerFrom : Form
     {
+        Menu menu;
         public ManagerFrom()
         {
             InitializeComponent();
@@ -24,6 +25,13 @@ namespace Resturant_Management_System.Presentation_Layer
         private void ManagerFrom_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void menuButton_Click(object sender, EventArgs e)
+        {
+            //menu = new Menu();
+            //menu.Show();
+            //this.Hide();
         }
     }
 }
