@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Resturant_Management_System.Resturant_Logic_Layer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,6 +26,12 @@ namespace Resturant_Management_System.Presentation_Layer
         private void button1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void FoodCategory_Load(object sender, EventArgs e)
+        {
+            CategoryService categoryService = new CategoryService();
+            category_Load_DataGridView.DataSource = categoryService.GetAllCategories();
         }
     }
 }

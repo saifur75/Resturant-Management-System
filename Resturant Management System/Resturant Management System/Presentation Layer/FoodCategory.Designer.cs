@@ -144,6 +144,7 @@
             this.Name = "FoodCategory";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FoodCategory_FormClosing);
+            this.Load += new System.EventHandler(this.FoodCategory_Load);
             ((System.ComponentModel.ISupportInitialize)(this.category_Load_DataGridView)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
