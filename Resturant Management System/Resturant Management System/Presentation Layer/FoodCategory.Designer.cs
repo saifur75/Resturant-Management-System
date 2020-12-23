@@ -36,8 +36,11 @@
             this.update_Category_Button = new System.Windows.Forms.Button();
             this.delete_Category_Button = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.category_Load_DataGridView)).BeginInit();
             this.groupBox1.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // category_Load_DataGridView
@@ -58,7 +61,8 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Cambria", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(23, 116);
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.Location = new System.Drawing.Point(21, 92);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(133, 22);
             this.label1.TabIndex = 1;
@@ -67,7 +71,7 @@
             // categoryName_TextBox
             // 
             this.categoryName_TextBox.Font = new System.Drawing.Font("Cambria", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.categoryName_TextBox.Location = new System.Drawing.Point(180, 113);
+            this.categoryName_TextBox.Location = new System.Drawing.Point(170, 89);
             this.categoryName_TextBox.Name = "categoryName_TextBox";
             this.categoryName_TextBox.Size = new System.Drawing.Size(242, 29);
             this.categoryName_TextBox.TabIndex = 2;
@@ -75,11 +79,13 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.delete_Category_Button);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.categoryName_TextBox);
             this.groupBox1.Controls.Add(this.update_Category_Button);
             this.groupBox1.Controls.Add(this.add_CategoryButton);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.groupBox1.Location = new System.Drawing.Point(13, 38);
+            this.groupBox1.Location = new System.Drawing.Point(12, 60);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(450, 292);
             this.groupBox1.TabIndex = 3;
@@ -133,23 +139,43 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "List Of Category";
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(847, 28);
+            this.menuStrip1.TabIndex = 5;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
+            this.fileToolStripMenuItem.Text = "File";
+            // 
             // FoodCategory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(847, 338);
+            this.ClientSize = new System.Drawing.Size(847, 364);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.categoryName_TextBox);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.category_Load_DataGridView);
             this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "FoodCategory";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FoodCategory_FormClosing);
             this.Load += new System.EventHandler(this.FoodCategory_Load);
             ((System.ComponentModel.ISupportInitialize)(this.category_Load_DataGridView)).EndInit();
             this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -165,5 +191,7 @@
         private System.Windows.Forms.Button update_Category_Button;
         private System.Windows.Forms.Button add_CategoryButton;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
     }
 }
