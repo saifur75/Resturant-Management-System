@@ -13,6 +13,7 @@ namespace Resturant_Management_System.Presentation_Layer
 {
     public partial class FoodCategory : Form
     {
+        int id = 0;
         public FoodCategory()
         {
             InitializeComponent();
@@ -49,6 +50,33 @@ namespace Resturant_Management_System.Presentation_Layer
         {
             CategoryService categoryService = new CategoryService();
             category_Load_DataGridView.DataSource = categoryService.GetAllCategories();
+        }
+
+        private void update_Category_Button_Click(object sender, EventArgs e)
+        {
+            if (categoryName_TextBox.Text == "")
+            {
+                MessageBox.Show("Fill up the required From");
+            }
+            else
+            {
+                CategoryService categoryService = new CategoryService();
+                int result = categoryService.UpdateCategory(id,categoryName_TextBox.Text);
+                if (result > 0)
+                {
+                    MessageBox.Show("Added successfully");
+                }
+                else
+                {
+                    MessageBox.Show("Error occur!");
+                }
+            }
+        }
+
+        private void category_Load_DataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            id =(int) category_Load_DataGridView.Rows[e.RowIndex].Cells[0].Value;
+            categoryName_TextBox.Text= category_Load_DataGridView.Rows[e.RowIndex].Cells[1].Value.ToString();
         }
     }
 }

@@ -52,6 +52,7 @@
             this.category_Load_DataGridView.RowTemplate.Height = 24;
             this.category_Load_DataGridView.Size = new System.Drawing.Size(329, 178);
             this.category_Load_DataGridView.TabIndex = 0;
+            this.category_Load_DataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.category_Load_DataGridView_CellClick);
             // 
             // label1
             // 
@@ -107,6 +108,7 @@
             this.update_Category_Button.TabIndex = 0;
             this.update_Category_Button.Text = "Update";
             this.update_Category_Button.UseVisualStyleBackColor = false;
+            this.update_Category_Button.Click += new System.EventHandler(this.update_Category_Button_Click);
             // 
             // delete_Category_Button
             // 
