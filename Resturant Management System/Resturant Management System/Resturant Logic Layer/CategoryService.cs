@@ -41,7 +41,10 @@ namespace Resturant_Management_System.Resturant_Logic_Layer
                 CategoryName = categoryName
             };
             return this.categoryDataAccess.UpdateCategory(category);
-
+        }
+        public List<string> GetCategoryNameList()
+        {
+            return this.categoryDataAccess.GetCategoryNames();
         }
     }
 }

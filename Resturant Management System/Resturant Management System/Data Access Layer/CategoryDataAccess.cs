@@ -44,5 +44,16 @@ namespace Resturant_Management_System.Data_Access_Layer
             string query = "UPDATE Categories SET CategoryName='" + category.CategoryName + "' WHERE CategoryId=" + category.CategoryId;
             return this.dataAccess.ExecuteQuery(query);            
         }
+        public List<string> GetCategoryNames()
+        {
+            string sql = "SELECT * FROM Categories";
+            SqlDataReader reader = this.dataAccess.GetData(sql);
+            List<string> categories = new List<string>();
+            while (reader.Read())
+            {
+                categories.Add(reader["CategoryName"].ToString());
+            }
+            return categories;
+        }
     }
 }
