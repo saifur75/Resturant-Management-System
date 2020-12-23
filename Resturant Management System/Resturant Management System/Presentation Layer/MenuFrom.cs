@@ -21,5 +21,10 @@ namespace Resturant_Management_System.Presentation_Layer
         {
             Application.Exit();
         }
+
+        private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
