@@ -8,9 +8,11 @@ namespace Resturant_Management_System.Entities
 {
     class Menu
     {
-        public int Id { get; set; }
-        public String Name { get; set; }
-        public String Price { get; set; }
-        public String Status { get; set; }
+        public int FoodId { get; set; }
+        public string FoodName { get; set; }
+        public double Price { get; set; }
+        public string Status { get; set; }
+        public int CategoryId { get; set; }
+       
     }
 }
