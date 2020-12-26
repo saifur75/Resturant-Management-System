@@ -13,6 +13,7 @@ namespace Resturant_Management_System.Presentation_Layer
 {
     public partial class ManagerFrom : Form
     {
+        MenuFrom menu;
         FoodCategory foodCategory;
         public ManagerFrom()
         {
@@ -30,7 +31,7 @@ namespace Resturant_Management_System.Presentation_Layer
 
         private void menuButton_Click(object sender, EventArgs e)
         {
-            //menu = new Menu();
+            //menu = new MenuFrom(this);
             //menu.Show();
             //this.Hide();
         }

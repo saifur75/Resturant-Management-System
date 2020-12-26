@@ -13,6 +13,7 @@ namespace Resturant_Management_System.Presentation_Layer
 {
     public partial class MenuFrom : Form
     {
+        ManagerFrom mf;
         int foodId = 0;
         public MenuFrom()
         {
@@ -23,6 +24,7 @@ namespace Resturant_Management_System.Presentation_Layer
             delete_button.Click += this.Clear;
             update_button.Click += this.Refresh;
             update_button.Click += this.Clear;
+            //this.mf = mf;
         }
 
         private void MenuFrom_FormClosing(object sender, FormClosingEventArgs e)
@@ -51,6 +53,7 @@ namespace Resturant_Management_System.Presentation_Layer
             foodNameTextBox.Text= food_ListDataGridView.Rows[e.RowIndex].Cells[1].Value.ToString();
             priceTextBox.Text= food_ListDataGridView.Rows[e.RowIndex].Cells[2].Value.ToString();
             statusTextBox.Text= food_ListDataGridView.Rows[e.RowIndex].Cells[3].Value.ToString();
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -104,7 +107,7 @@ namespace Resturant_Management_System.Presentation_Layer
             else
             {
                 MenuService menuService = new MenuService();
-                int result = menuService.UpdateMenu(foodNameTextBox.Text, priceTextBox.Text, statusTextBox.Text, categoryName_ComboBox.Text);
+                int result = menuService.UpdateMenu(foodId ,foodNameTextBox.Text, priceTextBox.Text, statusTextBox.Text, categoryName_ComboBox.Text);
                 if (result > 0)
                 {
                     MessageBox.Show("Update Successfully");
