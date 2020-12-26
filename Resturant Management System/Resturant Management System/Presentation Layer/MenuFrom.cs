@@ -130,5 +130,12 @@ namespace Resturant_Management_System.Presentation_Layer
             MenuService menuService = new MenuService();
            food_ListDataGridView.DataSource = menuService.GetProductListForSearch(searchTextBox.Text);
         }
+
+        private void logoutToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            LoginFrom loginFrom = new LoginFrom();
+            loginFrom.Show();
+            this.Hide();
+        }
     }
 }
