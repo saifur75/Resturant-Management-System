@@ -42,7 +42,7 @@ namespace Resturant_Management_System.Presentation_Layer
             MenuService menuService = new MenuService();
             food_ListDataGridView.DataSource = menuService.GetAllFood();
             CategoryService categoryService = new CategoryService();
-            food_ListDataGridView.DataSource = categoryService.GetCategoryNameList();
+            categoryName_ComboBox.DataSource = categoryService.GetCategoryNameList();
         }
 
         private void food_ListDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -62,7 +62,7 @@ namespace Resturant_Management_System.Presentation_Layer
             else
             {
                 MenuService menuService = new MenuService();
-                int result = menuService.AddFood(foodNameTextBox.Text,priceTextBox.Text,statusTextBox.Text,categoryComboBox.Text);
+                int result = menuService.AddFood(foodNameTextBox.Text,priceTextBox.Text,statusTextBox.Text, categoryName_ComboBox.Text);
                 if(result>0)
                 {
                     MessageBox.Show("Added Successfully");
@@ -97,7 +97,6 @@ namespace Resturant_Management_System.Presentation_Layer
 
         private void update_button_Click(object sender, EventArgs e)
         {
-
             if (foodNameTextBox.Text == "" || priceTextBox.Text == "" || statusTextBox.Text == "")
             {
                 MessageBox.Show("Fill up the required from");
@@ -105,7 +104,7 @@ namespace Resturant_Management_System.Presentation_Layer
             else
             {
                 MenuService menuService = new MenuService();
-                int result = menuService.UpdateMenu(foodNameTextBox.Text,priceTextBox.Text,statusTextBox.Text,categoryComboBox.Text);
+                int result = menuService.UpdateMenu(foodNameTextBox.Text, priceTextBox.Text, statusTextBox.Text, categoryName_ComboBox.Text);
                 if (result > 0)
                 {
                     MessageBox.Show("Update Successfully");
@@ -124,6 +123,12 @@ namespace Resturant_Management_System.Presentation_Layer
         void Clear(object sender, EventArgs e)
         {
             foodNameTextBox.Text = priceTextBox.Text = statusTextBox.Text = string.Empty;
+        }
+
+        private void searchTextBox_TextChanged(object sender, EventArgs e)
+        {
+            MenuService menuService = new MenuService();
+           food_ListDataGridView.DataSource = menuService.GetProductListForSearch(searchTextBox.Text);
         }
     }
 }

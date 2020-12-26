@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.welcomeLabel = new System.Windows.Forms.Label();
             this.logOutButton = new System.Windows.Forms.Button();
             this.billGenerateButton = new System.Windows.Forms.Button();
@@ -40,7 +41,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.myProfileButton = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -60,6 +60,19 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(671, 464);
             this.panel2.TabIndex = 3;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.button1.Location = new System.Drawing.Point(459, 106);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(185, 100);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Food Category";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // welcomeLabel
             // 
@@ -82,6 +95,7 @@
             this.logOutButton.TabIndex = 5;
             this.logOutButton.Text = "Log Out";
             this.logOutButton.UseVisualStyleBackColor = false;
+            this.logOutButton.Click += new System.EventHandler(this.logOutButton_Click);
             // 
             // billGenerateButton
             // 
@@ -90,7 +104,7 @@
             this.billGenerateButton.ForeColor = System.Drawing.Color.DimGray;
             this.billGenerateButton.Location = new System.Drawing.Point(459, 227);
             this.billGenerateButton.Name = "billGenerateButton";
-            this.billGenerateButton.Size = new System.Drawing.Size(186, 96);
+            this.billGenerateButton.Size = new System.Drawing.Size(186, 102);
             this.billGenerateButton.TabIndex = 4;
             this.billGenerateButton.Text = "Bill Generate";
             this.billGenerateButton.UseVisualStyleBackColor = false;
@@ -127,7 +141,7 @@
             this.tableButton.ForeColor = System.Drawing.Color.DimGray;
             this.tableButton.Location = new System.Drawing.Point(258, 229);
             this.tableButton.Name = "tableButton";
-            this.tableButton.Size = new System.Drawing.Size(181, 95);
+            this.tableButton.Size = new System.Drawing.Size(181, 100);
             this.tableButton.TabIndex = 1;
             this.tableButton.Text = "Table";
             this.tableButton.UseVisualStyleBackColor = false;
@@ -185,19 +199,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(269, 204);
             this.panel3.TabIndex = 0;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button1.Location = new System.Drawing.Point(459, 106);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(185, 100);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Food Category";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // ManagerFrom
             // 

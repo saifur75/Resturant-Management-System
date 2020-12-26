@@ -41,5 +41,12 @@ namespace Resturant_Management_System.Presentation_Layer
             foodCategory.Show();
             this.Hide();
         }
+
+        private void logOutButton_Click(object sender, EventArgs e)
+        {
+            LoginFrom loginFrom =new LoginFrom();
+            loginFrom.Show();
+            this.Hide();
+        }
     }
 }

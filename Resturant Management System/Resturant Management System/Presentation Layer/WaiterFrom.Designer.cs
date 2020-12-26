@@ -108,6 +108,7 @@
             this.logOutButton.TabIndex = 5;
             this.logOutButton.Text = "Log Out";
             this.logOutButton.UseVisualStyleBackColor = false;
+            this.logOutButton.Click += new System.EventHandler(this.logOutButton_Click);
             // 
             // takeOrderButton
             // 

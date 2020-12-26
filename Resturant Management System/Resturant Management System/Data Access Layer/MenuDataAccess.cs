@@ -54,7 +54,7 @@ namespace Resturant_Management_System.Data_Access_Layer
         }
         public int UpdateFood(Menu1 menu)
         {
-            string query = "UPDATE Menu SET FoodName='" + menu.FoodName + "',Price='" + menu.Price + "',Status='" + menu.Status + "',CategoryId='" + menu.CategoryId + "' WHERE FoodId='" + menu.FoodId + "'";
+            string query = "UPDATE Menu SET FoodName='" + menu.FoodName + "',Price='"+menu.Price+"',Status='" + menu.Status + "',CategoryId='" + menu.CategoryId + "' WHERE FoodId="+ menu.FoodId;
             dataAccess = new DataAccess();
             return this.dataAccess.ExecuteQuery(query);
         }

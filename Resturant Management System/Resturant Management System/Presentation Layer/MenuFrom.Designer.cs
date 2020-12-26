@@ -30,22 +30,22 @@
         {
             this.food_ListDataGridView = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.foodNameTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.priceTextBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.statusTextBox = new System.Windows.Forms.TextBox();
             this.searchTextBox = new System.Windows.Forms.TextBox();
             this.searchButton = new System.Windows.Forms.Button();
             this.addButton = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.categoryComboBox = new System.Windows.Forms.ComboBox();
             this.update_button = new System.Windows.Forms.Button();
             this.delete_button = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logoutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.foodNameTextBox = new System.Windows.Forms.TextBox();
+            this.priceTextBox = new System.Windows.Forms.TextBox();
+            this.statusTextBox = new System.Windows.Forms.TextBox();
+            this.categoryName_ComboBox = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.food_ListDataGridView)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -75,15 +75,6 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Food Name";
             // 
-            // foodNameTextBox
-            // 
-            this.foodNameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.foodNameTextBox.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.foodNameTextBox.Location = new System.Drawing.Point(171, 99);
-            this.foodNameTextBox.Name = "foodNameTextBox";
-            this.foodNameTextBox.Size = new System.Drawing.Size(216, 27);
-            this.foodNameTextBox.TabIndex = 2;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -94,15 +85,6 @@
             this.label2.Size = new System.Drawing.Size(47, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "Price";
-            // 
-            // priceTextBox
-            // 
-            this.priceTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.priceTextBox.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.priceTextBox.Location = new System.Drawing.Point(171, 152);
-            this.priceTextBox.Name = "priceTextBox";
-            this.priceTextBox.Size = new System.Drawing.Size(216, 27);
-            this.priceTextBox.TabIndex = 2;
             // 
             // label4
             // 
@@ -115,15 +97,6 @@
             this.label4.TabIndex = 1;
             this.label4.Text = "Status";
             // 
-            // statusTextBox
-            // 
-            this.statusTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.statusTextBox.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.statusTextBox.Location = new System.Drawing.Point(171, 213);
-            this.statusTextBox.Name = "statusTextBox";
-            this.statusTextBox.Size = new System.Drawing.Size(216, 27);
-            this.statusTextBox.TabIndex = 2;
-            // 
             // searchTextBox
             // 
             this.searchTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -131,6 +104,7 @@
             this.searchTextBox.Name = "searchTextBox";
             this.searchTextBox.Size = new System.Drawing.Size(406, 27);
             this.searchTextBox.TabIndex = 3;
+            this.searchTextBox.TextChanged += new System.EventHandler(this.searchTextBox_TextChanged);
             // 
             // searchButton
             // 
@@ -167,15 +141,6 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Catageroy";
             // 
-            // categoryComboBox
-            // 
-            this.categoryComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.categoryComboBox.FormattingEnabled = true;
-            this.categoryComboBox.Location = new System.Drawing.Point(171, 275);
-            this.categoryComboBox.Name = "categoryComboBox";
-            this.categoryComboBox.Size = new System.Drawing.Size(216, 28);
-            this.categoryComboBox.TabIndex = 6;
-            // 
             // update_button
             // 
             this.update_button.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -205,7 +170,7 @@
             this.fileToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1049, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1091, 28);
             this.menuStrip1.TabIndex = 8;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -231,24 +196,57 @@
             this.logoutToolStripMenuItem1.Size = new System.Drawing.Size(145, 26);
             this.logoutToolStripMenuItem1.Text = "Log out";
             // 
+            // foodNameTextBox
+            // 
+            this.foodNameTextBox.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.foodNameTextBox.Location = new System.Drawing.Point(171, 99);
+            this.foodNameTextBox.Name = "foodNameTextBox";
+            this.foodNameTextBox.Size = new System.Drawing.Size(281, 27);
+            this.foodNameTextBox.TabIndex = 9;
+            // 
+            // priceTextBox
+            // 
+            this.priceTextBox.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.priceTextBox.Location = new System.Drawing.Point(171, 152);
+            this.priceTextBox.Name = "priceTextBox";
+            this.priceTextBox.Size = new System.Drawing.Size(281, 27);
+            this.priceTextBox.TabIndex = 10;
+            // 
+            // statusTextBox
+            // 
+            this.statusTextBox.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statusTextBox.Location = new System.Drawing.Point(171, 217);
+            this.statusTextBox.Name = "statusTextBox";
+            this.statusTextBox.Size = new System.Drawing.Size(281, 27);
+            this.statusTextBox.TabIndex = 10;
+            // 
+            // categoryName_ComboBox
+            // 
+            this.categoryName_ComboBox.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.categoryName_ComboBox.FormattingEnabled = true;
+            this.categoryName_ComboBox.Location = new System.Drawing.Point(171, 280);
+            this.categoryName_ComboBox.Name = "categoryName_ComboBox";
+            this.categoryName_ComboBox.Size = new System.Drawing.Size(281, 28);
+            this.categoryName_ComboBox.TabIndex = 11;
+            // 
             // MenuFrom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.OliveDrab;
-            this.ClientSize = new System.Drawing.Size(1049, 501);
+            this.ClientSize = new System.Drawing.Size(1091, 501);
+            this.Controls.Add(this.categoryName_ComboBox);
+            this.Controls.Add(this.statusTextBox);
+            this.Controls.Add(this.priceTextBox);
+            this.Controls.Add(this.foodNameTextBox);
             this.Controls.Add(this.delete_button);
             this.Controls.Add(this.update_button);
-            this.Controls.Add(this.categoryComboBox);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.addButton);
             this.Controls.Add(this.searchButton);
             this.Controls.Add(this.searchTextBox);
-            this.Controls.Add(this.statusTextBox);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.priceTextBox);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.foodNameTextBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.food_ListDataGridView);
             this.Controls.Add(this.menuStrip1);
@@ -270,21 +268,21 @@
 
         private System.Windows.Forms.DataGridView food_ListDataGridView;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox foodNameTextBox;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox priceTextBox;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox statusTextBox;
         private System.Windows.Forms.TextBox searchTextBox;
         private System.Windows.Forms.Button searchButton;
         private System.Windows.Forms.Button addButton;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox categoryComboBox;
         private System.Windows.Forms.Button update_button;
         private System.Windows.Forms.Button delete_button;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem logOutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem1;
+        private System.Windows.Forms.TextBox foodNameTextBox;
+        private System.Windows.Forms.TextBox priceTextBox;
+        private System.Windows.Forms.TextBox statusTextBox;
+        private System.Windows.Forms.ComboBox categoryName_ComboBox;
     }
 }

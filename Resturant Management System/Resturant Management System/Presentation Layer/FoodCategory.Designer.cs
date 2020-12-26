@@ -32,9 +32,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.categoryName_TextBox = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.add_CategoryButton = new System.Windows.Forms.Button();
-            this.update_Category_Button = new System.Windows.Forms.Button();
             this.delete_Category_Button = new System.Windows.Forms.Button();
+            this.update_Category_Button = new System.Windows.Forms.Button();
+            this.add_CategoryButton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -53,7 +53,7 @@
             this.category_Load_DataGridView.ReadOnly = true;
             this.category_Load_DataGridView.RowHeadersWidth = 51;
             this.category_Load_DataGridView.RowTemplate.Height = 24;
-            this.category_Load_DataGridView.Size = new System.Drawing.Size(329, 178);
+            this.category_Load_DataGridView.Size = new System.Drawing.Size(333, 224);
             this.category_Load_DataGridView.TabIndex = 0;
             this.category_Load_DataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.category_Load_DataGridView_CellClick);
             // 
@@ -92,17 +92,17 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Food Category";
             // 
-            // add_CategoryButton
+            // delete_Category_Button
             // 
-            this.add_CategoryButton.BackColor = System.Drawing.Color.OliveDrab;
-            this.add_CategoryButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.add_CategoryButton.Location = new System.Drawing.Point(42, 180);
-            this.add_CategoryButton.Name = "add_CategoryButton";
-            this.add_CategoryButton.Size = new System.Drawing.Size(112, 43);
-            this.add_CategoryButton.TabIndex = 0;
-            this.add_CategoryButton.Text = "Add";
-            this.add_CategoryButton.UseVisualStyleBackColor = false;
-            this.add_CategoryButton.Click += new System.EventHandler(this.button1_Click);
+            this.delete_Category_Button.BackColor = System.Drawing.Color.OliveDrab;
+            this.delete_Category_Button.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.delete_Category_Button.Location = new System.Drawing.Point(335, 180);
+            this.delete_Category_Button.Name = "delete_Category_Button";
+            this.delete_Category_Button.Size = new System.Drawing.Size(93, 43);
+            this.delete_Category_Button.TabIndex = 0;
+            this.delete_Category_Button.Text = "Delete";
+            this.delete_Category_Button.UseVisualStyleBackColor = false;
+            this.delete_Category_Button.Click += new System.EventHandler(this.delete_Category_Button_Click);
             // 
             // update_Category_Button
             // 
@@ -116,17 +116,17 @@
             this.update_Category_Button.UseVisualStyleBackColor = false;
             this.update_Category_Button.Click += new System.EventHandler(this.update_Category_Button_Click);
             // 
-            // delete_Category_Button
+            // add_CategoryButton
             // 
-            this.delete_Category_Button.BackColor = System.Drawing.Color.OliveDrab;
-            this.delete_Category_Button.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.delete_Category_Button.Location = new System.Drawing.Point(335, 180);
-            this.delete_Category_Button.Name = "delete_Category_Button";
-            this.delete_Category_Button.Size = new System.Drawing.Size(93, 43);
-            this.delete_Category_Button.TabIndex = 0;
-            this.delete_Category_Button.Text = "Delete";
-            this.delete_Category_Button.UseVisualStyleBackColor = false;
-            this.delete_Category_Button.Click += new System.EventHandler(this.delete_Category_Button_Click);
+            this.add_CategoryButton.BackColor = System.Drawing.Color.OliveDrab;
+            this.add_CategoryButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.add_CategoryButton.Location = new System.Drawing.Point(42, 180);
+            this.add_CategoryButton.Name = "add_CategoryButton";
+            this.add_CategoryButton.Size = new System.Drawing.Size(112, 43);
+            this.add_CategoryButton.TabIndex = 0;
+            this.add_CategoryButton.Text = "Add";
+            this.add_CategoryButton.UseVisualStyleBackColor = false;
+            this.add_CategoryButton.Click += new System.EventHandler(this.button1_Click);
             // 
             // label2
             // 
@@ -146,7 +146,7 @@
             this.fileToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(847, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(851, 28);
             this.menuStrip1.TabIndex = 5;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -161,7 +161,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(847, 364);
+            this.ClientSize = new System.Drawing.Size(851, 364);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.category_Load_DataGridView);
             this.Controls.Add(this.groupBox1);
