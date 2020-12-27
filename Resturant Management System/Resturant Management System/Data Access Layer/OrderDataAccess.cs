@@ -15,6 +15,10 @@ namespace Resturant_Management_System.Data_Access_Layer
             this.dataAccess = new DataAccess();
         }
 
-        
+        public int AddOrder(Order order)
+        {
+            string query = "INSERT INTO Orders (Food_Name,Quantity,Total_Amount,Date) VALUES('"+order.Food_Name+"','"+order.Quantity+"','"+order.Total_Amount+"','"+order.Date+"')";
+            return this.dataAccess.ExecuteQuery(query);
+        }
     }
 }

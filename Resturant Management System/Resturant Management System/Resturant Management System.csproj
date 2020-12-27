@@ -50,8 +50,10 @@
     <Compile Include="Data Access Layer\DataAccess.cs" />
     <Compile Include="Data Access Layer\LoginDataAccess.cs" />
     <Compile Include="Data Access Layer\MenuDataAccess.cs" />
+    <Compile Include="Data Access Layer\OrderDataAccess.cs" />
     <Compile Include="Entities\Category.cs" />
     <Compile Include="Entities\Menu1.cs" />
+    <Compile Include="Entities\Order.cs" />
     <Compile Include="Entities\User.cs" />
     <Compile Include="Presentation Layer\ChangePasswordFrom.cs">
       <SubType>Form</SubType>

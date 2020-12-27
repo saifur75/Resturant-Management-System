@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.total_Amount_TextBox = new System.Windows.Forms.TextBox();
+            this.foodNameTextBox2 = new System.Windows.Forms.TextBox();
+            this.total_Price_TextBox = new System.Windows.Forms.TextBox();
+            this.quantity_TextBox = new System.Windows.Forms.TextBox();
+            this.priceTextBox = new System.Windows.Forms.TextBox();
+            this.food_Name_TextBox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -58,53 +58,53 @@
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // textBox6
+            // total_Amount_TextBox
             // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(958, 560);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(301, 27);
-            this.textBox6.TabIndex = 24;
+            this.total_Amount_TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.total_Amount_TextBox.Location = new System.Drawing.Point(958, 560);
+            this.total_Amount_TextBox.Name = "total_Amount_TextBox";
+            this.total_Amount_TextBox.Size = new System.Drawing.Size(301, 27);
+            this.total_Amount_TextBox.TabIndex = 24;
             // 
-            // textBox5
+            // foodNameTextBox2
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(958, 488);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(301, 27);
-            this.textBox5.TabIndex = 23;
+            this.foodNameTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.foodNameTextBox2.Location = new System.Drawing.Point(958, 488);
+            this.foodNameTextBox2.Name = "foodNameTextBox2";
+            this.foodNameTextBox2.Size = new System.Drawing.Size(301, 27);
+            this.foodNameTextBox2.TabIndex = 23;
             // 
-            // textBox4
+            // total_Price_TextBox
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(958, 272);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(301, 27);
-            this.textBox4.TabIndex = 22;
+            this.total_Price_TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.total_Price_TextBox.Location = new System.Drawing.Point(958, 272);
+            this.total_Price_TextBox.Name = "total_Price_TextBox";
+            this.total_Price_TextBox.Size = new System.Drawing.Size(301, 27);
+            this.total_Price_TextBox.TabIndex = 22;
             // 
-            // textBox3
+            // quantity_TextBox
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(958, 215);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(301, 27);
-            this.textBox3.TabIndex = 21;
+            this.quantity_TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.quantity_TextBox.Location = new System.Drawing.Point(958, 215);
+            this.quantity_TextBox.Name = "quantity_TextBox";
+            this.quantity_TextBox.Size = new System.Drawing.Size(301, 27);
+            this.quantity_TextBox.TabIndex = 21;
             // 
-            // textBox2
+            // priceTextBox
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(958, 158);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(301, 27);
-            this.textBox2.TabIndex = 20;
+            this.priceTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.priceTextBox.Location = new System.Drawing.Point(958, 158);
+            this.priceTextBox.Name = "priceTextBox";
+            this.priceTextBox.Size = new System.Drawing.Size(301, 27);
+            this.priceTextBox.TabIndex = 20;
             // 
-            // textBox1
+            // food_Name_TextBox
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(958, 106);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(301, 27);
-            this.textBox1.TabIndex = 19;
+            this.food_Name_TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.food_Name_TextBox.Location = new System.Drawing.Point(958, 106);
+            this.food_Name_TextBox.Name = "food_Name_TextBox";
+            this.food_Name_TextBox.Size = new System.Drawing.Size(301, 27);
+            this.food_Name_TextBox.TabIndex = 19;
             // 
             // label6
             // 
@@ -275,7 +275,7 @@
             // 
             this.backToolStripMenuItem.ForeColor = System.Drawing.SystemColors.InfoText;
             this.backToolStripMenuItem.Name = "backToolStripMenuItem";
-            this.backToolStripMenuItem.Size = new System.Drawing.Size(156, 28);
+            this.backToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
             this.backToolStripMenuItem.Text = "Back";
             // 
             // logOutToolStripMenuItem
@@ -325,12 +325,12 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.searchTextBox);
             this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.total_Amount_TextBox);
+            this.Controls.Add(this.foodNameTextBox2);
+            this.Controls.Add(this.total_Price_TextBox);
+            this.Controls.Add(this.quantity_TextBox);
+            this.Controls.Add(this.priceTextBox);
+            this.Controls.Add(this.food_Name_TextBox);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label7);
@@ -359,12 +359,12 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox total_Amount_TextBox;
+        private System.Windows.Forms.TextBox foodNameTextBox2;
+        private System.Windows.Forms.TextBox total_Price_TextBox;
+        private System.Windows.Forms.TextBox quantity_TextBox;
+        private System.Windows.Forms.TextBox priceTextBox;
+        private System.Windows.Forms.TextBox food_Name_TextBox;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
