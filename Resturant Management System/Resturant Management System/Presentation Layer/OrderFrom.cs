@@ -63,5 +63,26 @@ namespace Resturant_Management_System.Presentation_Layer
                 MessageBox.Show("Give the quantity");
             }           
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if(food_Name_TextBox.Text == "" || priceTextBox.Text=="" || quantity_TextBox.Text==""|| dateTimePicker1.Text=="" || total_Price_TextBox.Text=="")
+            {
+                MessageBox.Show("Fill up the required from");
+            }
+            else
+            {
+                OrderService orderService = new OrderService();
+                int result = orderService.AddOrder(food_Name_TextBox.Text, quantity_TextBox.Text, total_Price_TextBox.Text, dateTimePicker1.Text);
+                if(result>0)
+                {
+                    MessageBox.Show("Order added seccessfully");
+                }
+                else
+                {
+                    MessageBox.Show("Order can`t add");
+                }
+            }
+        }
     }
 }
