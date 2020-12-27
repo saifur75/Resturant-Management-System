@@ -239,6 +239,7 @@
             this.menu_DataGridView.RowTemplate.Height = 24;
             this.menu_DataGridView.Size = new System.Drawing.Size(685, 300);
             this.menu_DataGridView.TabIndex = 4;
+            this.menu_DataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.menu_DataGridView_CellClick);
             // 
             // dateTimePicker1
             // 

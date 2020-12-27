@@ -44,5 +44,12 @@ namespace Resturant_Management_System.Presentation_Layer
             MenuService menuService = new MenuService();
             menu_DataGridView.DataSource = menuService.GetProductListForSearch(searchTextBox.Text);
         }
+
+        private void menu_DataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            food_Name_TextBox.Text = menu_DataGridView.Rows[e.RowIndex].Cells[1].Value.ToString();
+            priceTextBox.Text = menu_DataGridView.Rows[e.RowIndex].Cells[2].Value.ToString();
+
+        }
     }
 }
