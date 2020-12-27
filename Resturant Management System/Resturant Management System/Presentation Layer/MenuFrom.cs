@@ -15,7 +15,7 @@ namespace Resturant_Management_System.Presentation_Layer
     {
         ManagerFrom mf;
         int foodId = 0;
-        public MenuFrom()
+        public MenuFrom(ManagerFrom mf)
         {
             InitializeComponent();
             addButton.Click += this.Refresh;
@@ -24,7 +24,7 @@ namespace Resturant_Management_System.Presentation_Layer
             delete_button.Click += this.Clear;
             update_button.Click += this.Refresh;
             update_button.Click += this.Clear;
-            //this.mf = mf;
+            this.mf = mf;
         }
 
         private void MenuFrom_FormClosing(object sender, FormClosingEventArgs e)

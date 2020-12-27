@@ -52,7 +52,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.panel1.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.panel1.Controls.Add(this.myProfileButton);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.panel3);
@@ -63,7 +63,7 @@
             // 
             // myProfileButton
             // 
-            this.myProfileButton.BackColor = System.Drawing.Color.Maroon;
+            this.myProfileButton.BackColor = System.Drawing.Color.Gray;
             this.myProfileButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myProfileButton.ForeColor = System.Drawing.Color.White;
             this.myProfileButton.Location = new System.Drawing.Point(18, 375);
@@ -76,7 +76,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.label1.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(29, 36);
@@ -99,7 +99,7 @@
             // 
             // logOutButton
             // 
-            this.logOutButton.BackColor = System.Drawing.Color.Maroon;
+            this.logOutButton.BackColor = System.Drawing.Color.Gray;
             this.logOutButton.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.logOutButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.logOutButton.Location = new System.Drawing.Point(458, 7);

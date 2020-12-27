@@ -31,9 +31,9 @@ namespace Resturant_Management_System.Presentation_Layer
 
         private void menuButton_Click(object sender, EventArgs e)
         {
-            //menu = new MenuFrom(this);
-            //menu.Show();
-            //this.Hide();
+            menu = new MenuFrom(this);
+            menu.Show();
+            this.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
