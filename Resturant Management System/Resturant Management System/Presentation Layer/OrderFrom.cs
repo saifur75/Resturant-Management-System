@@ -49,7 +49,19 @@ namespace Resturant_Management_System.Presentation_Layer
         {
             food_Name_TextBox.Text = menu_DataGridView.Rows[e.RowIndex].Cells[1].Value.ToString();
             priceTextBox.Text = menu_DataGridView.Rows[e.RowIndex].Cells[2].Value.ToString();
+        }
 
+        private void button7_Click(object sender, EventArgs e)
+        {
+            if(quantity_TextBox.Text != "")
+            {
+                int text = (Convert.ToInt32(priceTextBox.Text)) * (Convert.ToInt32(quantity_TextBox.Text));
+                total_Price_TextBox.Text = text.ToString();
+            }
+            else
+            {
+                MessageBox.Show("Give the quantity");
+            }           
         }
     }
 }
