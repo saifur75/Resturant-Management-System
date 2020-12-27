@@ -83,6 +83,12 @@
     <Compile Include="Presentation Layer\MenuFrom.Designer.cs">
       <DependentUpon>MenuFrom.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentation Layer\OrderFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\OrderFrom.Designer.cs">
+      <DependentUpon>OrderFrom.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentation Layer\WaiterFrom.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,6 +114,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation Layer\MenuFrom.resx">
       <DependentUpon>MenuFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\OrderFrom.resx">
+      <DependentUpon>OrderFrom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation Layer\WaiterFrom.resx">
       <DependentUpon>WaiterFrom.cs</DependentUpon>
