@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Resturant_Management_System.Resturant_Logic_Layer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -27,6 +28,15 @@ namespace Resturant_Management_System.Presentation_Layer
             LoginFrom loginFrom = new LoginFrom();
             loginFrom.Show();
             this.Hide();
+        }
+
+        private void OrderFrom_Load(object sender, EventArgs e)
+        {
+            MenuService menuService = new MenuService();
+            menu_DataGridView.DataSource = menuService.GetAllFood();
+            OrderService orderService = new OrderService();
+            //order_DataGridView.DataSource=orderService.
+            
         }
     }
 }

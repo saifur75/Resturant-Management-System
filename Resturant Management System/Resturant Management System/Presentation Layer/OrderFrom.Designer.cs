@@ -43,8 +43,8 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.order_DataGridView = new System.Windows.Forms.DataGridView();
+            this.menu_DataGridView = new System.Windows.Forms.DataGridView();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -53,8 +53,8 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.searchTextBox = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.order_DataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.menu_DataGridView)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -214,31 +214,31 @@
             this.button2.Text = "Add to order";
             this.button2.UseVisualStyleBackColor = false;
             // 
-            // dataGridView2
+            // order_DataGridView
             // 
-            this.dataGridView2.AllowUserToAddRows = false;
-            this.dataGridView2.AllowUserToDeleteRows = false;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(12, 436);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.ReadOnly = true;
-            this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(685, 320);
-            this.dataGridView2.TabIndex = 5;
+            this.order_DataGridView.AllowUserToAddRows = false;
+            this.order_DataGridView.AllowUserToDeleteRows = false;
+            this.order_DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.order_DataGridView.Location = new System.Drawing.Point(12, 436);
+            this.order_DataGridView.Name = "order_DataGridView";
+            this.order_DataGridView.ReadOnly = true;
+            this.order_DataGridView.RowHeadersWidth = 51;
+            this.order_DataGridView.RowTemplate.Height = 24;
+            this.order_DataGridView.Size = new System.Drawing.Size(685, 320);
+            this.order_DataGridView.TabIndex = 5;
             // 
-            // dataGridView1
+            // menu_DataGridView
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 77);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(685, 300);
-            this.dataGridView1.TabIndex = 4;
+            this.menu_DataGridView.AllowUserToAddRows = false;
+            this.menu_DataGridView.AllowUserToDeleteRows = false;
+            this.menu_DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.menu_DataGridView.Location = new System.Drawing.Point(12, 77);
+            this.menu_DataGridView.Name = "menu_DataGridView";
+            this.menu_DataGridView.ReadOnly = true;
+            this.menu_DataGridView.RowHeadersWidth = 51;
+            this.menu_DataGridView.RowTemplate.Height = 24;
+            this.menu_DataGridView.Size = new System.Drawing.Size(685, 300);
+            this.menu_DataGridView.TabIndex = 4;
             // 
             // dateTimePicker1
             // 
@@ -341,15 +341,16 @@
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.dataGridView2);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.order_DataGridView);
+            this.Controls.Add(this.menu_DataGridView);
             this.Controls.Add(this.menuStrip1);
             this.Name = "OrderFrom";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "OrderFrom";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.OrderFrom_FormClosing);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.OrderFrom_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.order_DataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.menu_DataGridView)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -374,8 +375,8 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView order_DataGridView;
+        private System.Windows.Forms.DataGridView menu_DataGridView;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
