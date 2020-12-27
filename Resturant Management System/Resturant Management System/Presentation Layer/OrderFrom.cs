@@ -38,5 +38,11 @@ namespace Resturant_Management_System.Presentation_Layer
             order_DataGridView.DataSource = orderService.GetAllOrder();
             
         }
+
+        private void searchTextBox_TextChanged(object sender, EventArgs e)
+        {
+            MenuService menuService = new MenuService();
+            menu_DataGridView.DataSource = menuService.GetProductListForSearch(searchTextBox.Text);
+        }
     }
 }
