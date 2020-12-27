@@ -120,6 +120,7 @@
             this.viewOrderButton.TabIndex = 3;
             this.viewOrderButton.Text = "View Order";
             this.viewOrderButton.UseVisualStyleBackColor = false;
+            this.viewOrderButton.Click += new System.EventHandler(this.viewOrderButton_Click);
             // 
             // menuButton
             // 

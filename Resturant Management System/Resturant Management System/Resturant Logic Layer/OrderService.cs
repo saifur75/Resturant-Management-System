@@ -15,6 +15,10 @@ namespace Resturant_Management_System.Resturant_Logic_Layer
         {
             this.orderDataAccess = new OrderDataAccess();
         }
+        public List<Order> GetAllOrder()
+        {
+            return this.orderDataAccess.GetAllOrder();
+        }
         public int AddOrder(string foodName,string quantity,string totalAmmount,string date)
         {
             Order order = new Order()

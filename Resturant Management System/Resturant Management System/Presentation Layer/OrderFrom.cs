@@ -35,7 +35,7 @@ namespace Resturant_Management_System.Presentation_Layer
             MenuService menuService = new MenuService();
             menu_DataGridView.DataSource = menuService.GetAllFood();
             OrderService orderService = new OrderService();
-            //order_DataGridView.DataSource=orderService.
+            order_DataGridView.DataSource = orderService.GetAllOrder();
             
         }
     }

@@ -50,5 +50,12 @@ namespace Resturant_Management_System.Presentation_Layer
             loginFrom.Show();
             this.Hide();
         }
+
+        private void viewOrderButton_Click(object sender, EventArgs e)
+        {
+            OrderFrom orderFrom = new OrderFrom();
+            orderFrom.Show();
+            this.Hide();
+        }
     }
 }

@@ -102,6 +102,7 @@
     <Compile Include="Resturant Logic Layer\CategoryService.cs" />
     <Compile Include="Resturant Logic Layer\LoginService.cs" />
     <Compile Include="Resturant Logic Layer\MenuService.cs" />
+    <Compile Include="Resturant Logic Layer\OrderService.cs" />
     <EmbeddedResource Include="Presentation Layer\ChangePasswordFrom.resx">
       <DependentUpon>ChangePasswordFrom.cs</DependentUpon>
     </EmbeddedResource>
