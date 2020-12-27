@@ -41,7 +41,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
@@ -60,7 +59,7 @@
             // textBox6
             // 
             this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(972, 572);
+            this.textBox6.Location = new System.Drawing.Point(958, 560);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(301, 27);
             this.textBox6.TabIndex = 24;
@@ -68,7 +67,7 @@
             // textBox5
             // 
             this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(972, 488);
+            this.textBox5.Location = new System.Drawing.Point(958, 488);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(301, 27);
             this.textBox5.TabIndex = 23;
@@ -111,7 +110,7 @@
             this.label6.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(830, 579);
+            this.label6.Location = new System.Drawing.Point(788, 567);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(118, 20);
             this.label6.TabIndex = 17;
@@ -123,7 +122,7 @@
             this.label5.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(849, 488);
+            this.label5.Location = new System.Drawing.Point(811, 495);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(95, 20);
             this.label5.TabIndex = 16;
@@ -180,30 +179,21 @@
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.OliveDrab;
-            this.button5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(1091, 676);
+            this.button5.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.SystemColors.Control;
+            this.button5.Location = new System.Drawing.Point(958, 643);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(149, 52);
+            this.button5.Size = new System.Drawing.Size(301, 61);
             this.button5.TabIndex = 12;
             this.button5.Text = "Delete order";
             this.button5.UseVisualStyleBackColor = false;
             // 
-            // button4
-            // 
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(887, 676);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(156, 52);
-            this.button4.TabIndex = 11;
-            this.button4.Text = "Total Amount";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
             // button7
             // 
             this.button7.BackColor = System.Drawing.Color.OliveDrab;
-            this.button7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button7.Location = new System.Drawing.Point(909, 356);
+            this.button7.Location = new System.Drawing.Point(890, 344);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(170, 51);
             this.button7.TabIndex = 8;
@@ -213,9 +203,9 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.OliveDrab;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button2.Location = new System.Drawing.Point(1135, 356);
+            this.button2.Location = new System.Drawing.Point(1088, 344);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(171, 51);
             this.button2.TabIndex = 7;
@@ -326,7 +316,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.dataGridView2);
@@ -360,7 +349,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DataGridView dataGridView2;
