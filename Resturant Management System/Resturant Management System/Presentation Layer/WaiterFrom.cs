@@ -36,7 +36,8 @@ namespace Resturant_Management_System.Presentation_Layer
 
         private void MenuButton_Click(object sender, EventArgs e)
         {
-            menu = new MenuFrom(this);
+            string post = "Waiter";
+            menu = new MenuFrom(this,post);
             menu.Show();
             this.Hide();
         }

@@ -35,6 +35,7 @@ namespace Resturant_Management_System.Presentation_Layer
                 if (loginService.GetPost(userNameTextBox.Text).Equals("Manager"))
                 {
                     MessageBox.Show("Login Successfully");
+                    string post = "Manager";
                     mf = new ManagerFrom(userNameTextBox.Text);
                     mf.Show();
                     this.Hide();

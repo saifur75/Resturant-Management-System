@@ -15,22 +15,19 @@ namespace Resturant_Management_System.Presentation_Layer
     {
         ManagerFrom mf;
         WaiterFrom wf;
+        string post;
         int foodId = 0;
-        public MenuFrom(ManagerFrom mf)
+        public MenuFrom(ManagerFrom mf,string post)
         {
             InitializeComponent();
-            //addButton.Click += this.Refresh;
-            //addButton.Click += this.Clear;
-            //delete_button.Click += this.Refresh;
-            //delete_button.Click += this.Clear;
-            //update_button.Click += this.Refresh;
-            //update_button.Click += this.Clear;
             this.mf = mf;
+            this.post = post;
         }
-        public MenuFrom(WaiterFrom wf)
+        public MenuFrom(WaiterFrom wf,string post)
         {
             InitializeComponent();
             this.wf = wf;
+            this.post = post;
         }
 
         private void MenuFrom_FormClosing(object sender, FormClosingEventArgs e)
@@ -146,7 +143,23 @@ namespace Resturant_Management_System.Presentation_Layer
            food_ListDataGridView.DataSource = menuService.GetProductListForSearch(searchTextBox.Text);
         }
 
-        private void logoutToolStripMenuItem1_Click(object sender, EventArgs e)
+
+        private void backToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if(post.Equals("Manager"))
+            {
+                mf.Show();
+                this.Hide();
+            }
+            else if(post.Equals("Waiter"))
+            {
+                wf.Show();
+                this.Hide();
+            }
+
+        }
+
+        private void logoutToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             LoginFrom loginFrom = new LoginFrom();
             loginFrom.Show();
