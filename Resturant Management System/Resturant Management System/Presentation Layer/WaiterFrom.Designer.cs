@@ -133,6 +133,7 @@
             this.MenuButton.TabIndex = 3;
             this.MenuButton.Text = "Menu";
             this.MenuButton.UseVisualStyleBackColor = false;
+            this.MenuButton.Click += new System.EventHandler(this.MenuButton_Click);
             // 
             // welcomeLabel
             // 

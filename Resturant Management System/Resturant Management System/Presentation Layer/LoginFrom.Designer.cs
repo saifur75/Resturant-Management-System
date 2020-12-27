@@ -50,7 +50,7 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.userNameTextBox);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(85, 79);
+            this.panel1.Location = new System.Drawing.Point(25, 29);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(288, 420);
             this.panel1.TabIndex = 3;
@@ -130,7 +130,7 @@
             // 
             this.panel2.BackgroundImage = global::Resturant_Management_System.Properties.Resources.restaurant;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel2.Location = new System.Drawing.Point(379, 79);
+            this.panel2.Location = new System.Drawing.Point(319, 29);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(648, 420);
             this.panel2.TabIndex = 2;
@@ -139,8 +139,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkRed;
-            this.ClientSize = new System.Drawing.Size(1102, 570);
+            this.BackColor = System.Drawing.Color.Maroon;
+            this.ClientSize = new System.Drawing.Size(991, 471);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "LoginFrom";

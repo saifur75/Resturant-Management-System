@@ -12,6 +12,7 @@ namespace Resturant_Management_System.Presentation_Layer
 {
     public partial class WaiterFrom : Form
     {
+        MenuFrom menu;
         public WaiterFrom()
         {
             InitializeComponent();
@@ -30,6 +31,13 @@ namespace Resturant_Management_System.Presentation_Layer
         {
             LoginFrom loginFrom = new LoginFrom();
             loginFrom.Show();
+            this.Hide();
+        }
+
+        private void MenuButton_Click(object sender, EventArgs e)
+        {
+            menu = new MenuFrom(this);
+            menu.Show();
             this.Hide();
         }
     }

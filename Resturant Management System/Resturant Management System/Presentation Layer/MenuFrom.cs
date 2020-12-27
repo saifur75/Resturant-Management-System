@@ -14,17 +14,23 @@ namespace Resturant_Management_System.Presentation_Layer
     public partial class MenuFrom : Form
     {
         ManagerFrom mf;
+        WaiterFrom wf;
         int foodId = 0;
         public MenuFrom(ManagerFrom mf)
         {
             InitializeComponent();
-            addButton.Click += this.Refresh;
-            addButton.Click += this.Clear;
-            delete_button.Click += this.Refresh;
-            delete_button.Click += this.Clear;
-            update_button.Click += this.Refresh;
-            update_button.Click += this.Clear;
+            //addButton.Click += this.Refresh;
+            //addButton.Click += this.Clear;
+            //delete_button.Click += this.Refresh;
+            //delete_button.Click += this.Clear;
+            //update_button.Click += this.Refresh;
+            //update_button.Click += this.Clear;
             this.mf = mf;
+        }
+        public MenuFrom(WaiterFrom wf)
+        {
+            InitializeComponent();
+            this.wf = wf;
         }
 
         private void MenuFrom_FormClosing(object sender, FormClosingEventArgs e)
@@ -69,6 +75,8 @@ namespace Resturant_Management_System.Presentation_Layer
                 if(result>0)
                 {
                     MessageBox.Show("Added Successfully");
+                    this.Refresh(this, null);
+                    this.Clear(this, null);
                 }
                 else
                 {
@@ -90,6 +98,8 @@ namespace Resturant_Management_System.Presentation_Layer
                 if (result > 0)
                 {
                     MessageBox.Show("Delete Successfully");
+                    this.Refresh(this, null);
+                    this.Clear(this, null);
                 }
                 else
                 {
@@ -111,6 +121,8 @@ namespace Resturant_Management_System.Presentation_Layer
                 if (result > 0)
                 {
                     MessageBox.Show("Update Successfully");
+                    this.Refresh(this, null);
+                    this.Clear(this, null);
                 }
                 else
                 {
