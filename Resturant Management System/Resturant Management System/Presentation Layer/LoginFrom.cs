@@ -40,6 +40,10 @@ namespace Resturant_Management_System.Presentation_Layer
                     mf.Show();
                     this.Hide();
                 }
+                else if(loginService.GetPost(userNameTextBox.Text).Equals("Admin"))
+                {
+
+                }
                 else if (loginService.GetPost(userNameTextBox.Text).Equals("Waiter"))
                 {
                     MessageBox.Show("Login Successfully");

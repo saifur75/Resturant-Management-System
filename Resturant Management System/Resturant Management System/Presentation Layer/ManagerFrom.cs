@@ -53,8 +53,9 @@ namespace Resturant_Management_System.Presentation_Layer
 
         private void viewOrderButton_Click(object sender, EventArgs e)
         {
-            OrderFrom orderFrom = new OrderFrom();
-            orderFrom.Show();
+            string post = "Manager";
+            ViewOrder viewOrder = new ViewOrder(this,post);
+            viewOrder.Show();
             this.Hide();
         }
     }

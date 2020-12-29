@@ -91,6 +91,12 @@
     <Compile Include="Presentation Layer\OrderFrom.Designer.cs">
       <DependentUpon>OrderFrom.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentation Layer\ViewOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\ViewOrder.Designer.cs">
+      <DependentUpon>ViewOrder.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentation Layer\WaiterFrom.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,6 +126,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation Layer\OrderFrom.resx">
       <DependentUpon>OrderFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\ViewOrder.resx">
+      <DependentUpon>ViewOrder.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation Layer\WaiterFrom.resx">
       <DependentUpon>WaiterFrom.cs</DependentUpon>

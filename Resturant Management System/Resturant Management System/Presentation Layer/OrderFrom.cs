@@ -13,6 +13,7 @@ namespace Resturant_Management_System.Presentation_Layer
 {
     public partial class OrderFrom : Form
     {
+        string post;
         public OrderFrom()
         {
             InitializeComponent();
@@ -23,20 +24,13 @@ namespace Resturant_Management_System.Presentation_Layer
             Application.Exit();
         }
 
-        private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            LoginFrom loginFrom = new LoginFrom();
-            loginFrom.Show();
-            this.Hide();
-        }
-
         private void OrderFrom_Load(object sender, EventArgs e)
         {
             MenuService menuService = new MenuService();
             menu_DataGridView.DataSource = menuService.GetAllFood();
             OrderService orderService = new OrderService();
             order_DataGridView.DataSource = orderService.GetAllOrder();
-            
+
         }
 
         private void searchTextBox_TextChanged(object sender, EventArgs e)
@@ -53,7 +47,7 @@ namespace Resturant_Management_System.Presentation_Layer
 
         private void button7_Click(object sender, EventArgs e)
         {
-            if(quantity_TextBox.Text != "")
+            if (quantity_TextBox.Text != "")
             {
                 int text = (Convert.ToInt32(priceTextBox.Text)) * (Convert.ToInt32(quantity_TextBox.Text));
                 total_Price_TextBox.Text = text.ToString();
@@ -61,12 +55,12 @@ namespace Resturant_Management_System.Presentation_Layer
             else
             {
                 MessageBox.Show("Give the quantity");
-            }           
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if(food_Name_TextBox.Text == "" || priceTextBox.Text=="" || quantity_TextBox.Text==""|| dateTimePicker1.Text=="" || total_Price_TextBox.Text=="")
+            if (food_Name_TextBox.Text == "" || priceTextBox.Text == "" || quantity_TextBox.Text == "" || dateTimePicker1.Text == "" || total_Price_TextBox.Text == "")
             {
                 MessageBox.Show("Fill up the required from");
             }
@@ -74,15 +68,44 @@ namespace Resturant_Management_System.Presentation_Layer
             {
                 OrderService orderService = new OrderService();
                 int result = orderService.AddOrder(food_Name_TextBox.Text, quantity_TextBox.Text, total_Price_TextBox.Text, dateTimePicker1.Text);
-                if(result>0)
+                if (result > 0)
                 {
                     MessageBox.Show("Order added seccessfully");
+                    this.Refresh(this, null);
+                    this.ClearMenu(this, null);
                 }
                 else
                 {
                     MessageBox.Show("Order can`t add");
                 }
             }
+        }
+        void Refresh(object sender, EventArgs e)
+        {
+            MenuService menuService = new MenuService();
+            menu_DataGridView.DataSource = menuService.GetAllFood();
+            OrderService orderService = new OrderService();
+            order_DataGridView.DataSource = orderService.GetAllOrder();
+        }
+        void ClearMenu(object sender, EventArgs e)
+        {
+            food_Name_TextBox.Text = priceTextBox.Text = quantity_TextBox.Text = total_Price_TextBox.Text = string.Empty;
+        }
+        void ClearOrder(object sender, EventArgs e)
+        {
+            foodNameTextBox2.Text = total_Amount_TextBox.Text = string.Empty;
+        }
+
+        private void logOutToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            LoginFrom loginFrom = new LoginFrom();
+            loginFrom.Show();
+            this.Hide();
+        }
+
+        private void backToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
