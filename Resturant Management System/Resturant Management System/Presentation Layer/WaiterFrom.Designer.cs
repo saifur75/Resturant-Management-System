@@ -121,6 +121,7 @@
             this.takeOrderButton.TabIndex = 4;
             this.takeOrderButton.Text = "Take Order";
             this.takeOrderButton.UseVisualStyleBackColor = false;
+            this.takeOrderButton.Click += new System.EventHandler(this.takeOrderButton_Click);
             // 
             // MenuButton
             // 

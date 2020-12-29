@@ -197,6 +197,7 @@
             this.button5.TabIndex = 12;
             this.button5.Text = "Delete order";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button7
             // 
@@ -236,6 +237,7 @@
             this.order_DataGridView.RowTemplate.Height = 24;
             this.order_DataGridView.Size = new System.Drawing.Size(685, 320);
             this.order_DataGridView.TabIndex = 5;
+            this.order_DataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.order_DataGridView_CellClick);
             // 
             // menu_DataGridView
             // 
@@ -374,14 +376,14 @@
             // backToolStripMenuItem
             // 
             this.backToolStripMenuItem.Name = "backToolStripMenuItem";
-            this.backToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.backToolStripMenuItem.Size = new System.Drawing.Size(145, 26);
             this.backToolStripMenuItem.Text = "Back";
             this.backToolStripMenuItem.Click += new System.EventHandler(this.backToolStripMenuItem_Click);
             // 
             // logOutToolStripMenuItem
             // 
             this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
-            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(145, 26);
             this.logOutToolStripMenuItem.Text = "Log Out";
             this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click_1);
             // 

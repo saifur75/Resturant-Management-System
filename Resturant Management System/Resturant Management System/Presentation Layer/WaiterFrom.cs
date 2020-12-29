@@ -13,6 +13,7 @@ namespace Resturant_Management_System.Presentation_Layer
     public partial class WaiterFrom : Form
     {
         MenuFrom menu;
+        OrderFrom orderFrom;
         public WaiterFrom()
         {
             InitializeComponent();
@@ -39,6 +40,13 @@ namespace Resturant_Management_System.Presentation_Layer
             string post = "Waiter";
             menu = new MenuFrom(this,post);
             menu.Show();
+            this.Hide();
+        }
+
+        private void takeOrderButton_Click(object sender, EventArgs e)
+        {
+            orderFrom = new OrderFrom();
+            orderFrom.Show();
             this.Hide();
         }
     }

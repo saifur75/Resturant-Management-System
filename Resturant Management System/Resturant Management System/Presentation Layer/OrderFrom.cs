@@ -13,6 +13,7 @@ namespace Resturant_Management_System.Presentation_Layer
 {
     public partial class OrderFrom : Form
     {
+        int foodId = 0;
         string post;
         public OrderFrom()
         {
@@ -106,6 +107,41 @@ namespace Resturant_Management_System.Presentation_Layer
         private void backToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            if(foodNameTextBox2.Text =="")
+            {
+                MessageBox.Show("Fill up the required from");
+            }
+            else
+            {
+                OrderService orderService = new OrderService();
+                int result = orderService.DeleteOrder(foodId);
+                if(result>0)
+                {
+                    MessageBox.Show("Order delete successfully");
+                    this.Refresh1(this, null);
+                    this.ClearOrder(this, null);
+                }
+                else
+                {
+                    MessageBox.Show("error occur");
+                }
+            }
+        }
+
+        private void order_DataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            foodId = (int)order_DataGridView.Rows[e.RowIndex].Cells[0].Value;
+            foodNameTextBox2.Text= order_DataGridView.Rows[e.RowIndex].Cells[1].Value.ToString();
+            total_Amount_TextBox.Text= order_DataGridView.Rows[e.RowIndex].Cells[3].Value.ToString();
+        }
+        void Refresh1(object sender, EventArgs e)
+        {
+            OrderService orderService = new OrderService();
+            order_DataGridView.DataSource = orderService.GetAllOrder();
         }
     }
 }

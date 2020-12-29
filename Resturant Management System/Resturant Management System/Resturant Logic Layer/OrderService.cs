@@ -28,8 +28,12 @@ namespace Resturant_Management_System.Resturant_Logic_Layer
                 Total_Amount = Convert.ToDouble(totalAmmount),
                 Date = date
             };
-            //orderDataAccess = new OrderDataAccess();
+            orderDataAccess = new OrderDataAccess();
             return this.orderDataAccess.AddOrder(order);
+        }
+        public int DeleteOrder(int id)
+        {
+            return this.orderDataAccess.DeleteOrder(id);
         }
     }
 }
