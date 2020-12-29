@@ -66,7 +66,7 @@
             this.button1.BackColor = System.Drawing.Color.PaleTurquoise;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button1.Location = new System.Drawing.Point(459, 106);
+            this.button1.Location = new System.Drawing.Point(460, 135);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(185, 100);
             this.button1.TabIndex = 7;
@@ -78,7 +78,7 @@
             // 
             this.welcomeLabel.AutoSize = true;
             this.welcomeLabel.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.welcomeLabel.Location = new System.Drawing.Point(43, 19);
+            this.welcomeLabel.Location = new System.Drawing.Point(41, 37);
             this.welcomeLabel.Name = "welcomeLabel";
             this.welcomeLabel.Size = new System.Drawing.Size(93, 25);
             this.welcomeLabel.TabIndex = 6;
@@ -102,7 +102,7 @@
             this.billGenerateButton.BackColor = System.Drawing.Color.PaleTurquoise;
             this.billGenerateButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.billGenerateButton.ForeColor = System.Drawing.Color.DimGray;
-            this.billGenerateButton.Location = new System.Drawing.Point(459, 227);
+            this.billGenerateButton.Location = new System.Drawing.Point(459, 274);
             this.billGenerateButton.Name = "billGenerateButton";
             this.billGenerateButton.Size = new System.Drawing.Size(186, 102);
             this.billGenerateButton.TabIndex = 4;
@@ -114,7 +114,7 @@
             this.viewOrderButton.BackColor = System.Drawing.Color.PaleTurquoise;
             this.viewOrderButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.viewOrderButton.ForeColor = System.Drawing.Color.DimGray;
-            this.viewOrderButton.Location = new System.Drawing.Point(59, 229);
+            this.viewOrderButton.Location = new System.Drawing.Point(59, 276);
             this.viewOrderButton.Name = "viewOrderButton";
             this.viewOrderButton.Size = new System.Drawing.Size(185, 100);
             this.viewOrderButton.TabIndex = 3;
@@ -127,7 +127,7 @@
             this.menuButton.BackColor = System.Drawing.Color.PaleTurquoise;
             this.menuButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuButton.ForeColor = System.Drawing.Color.DimGray;
-            this.menuButton.Location = new System.Drawing.Point(258, 106);
+            this.menuButton.Location = new System.Drawing.Point(263, 135);
             this.menuButton.Name = "menuButton";
             this.menuButton.Size = new System.Drawing.Size(186, 100);
             this.menuButton.TabIndex = 2;
@@ -140,7 +140,7 @@
             this.tableButton.BackColor = System.Drawing.Color.PaleTurquoise;
             this.tableButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tableButton.ForeColor = System.Drawing.Color.DimGray;
-            this.tableButton.Location = new System.Drawing.Point(258, 229);
+            this.tableButton.Location = new System.Drawing.Point(263, 276);
             this.tableButton.Name = "tableButton";
             this.tableButton.Size = new System.Drawing.Size(181, 100);
             this.tableButton.TabIndex = 1;
@@ -153,7 +153,7 @@
             this.manageWaiterButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.manageWaiterButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.manageWaiterButton.ForeColor = System.Drawing.Color.DimGray;
-            this.manageWaiterButton.Location = new System.Drawing.Point(59, 106);
+            this.manageWaiterButton.Location = new System.Drawing.Point(63, 135);
             this.manageWaiterButton.Name = "manageWaiterButton";
             this.manageWaiterButton.Size = new System.Drawing.Size(181, 100);
             this.manageWaiterButton.TabIndex = 0;

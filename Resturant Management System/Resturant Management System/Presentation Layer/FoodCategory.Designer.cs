@@ -94,7 +94,7 @@
             // 
             // delete_Category_Button
             // 
-            this.delete_Category_Button.BackColor = System.Drawing.Color.OliveDrab;
+            this.delete_Category_Button.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.delete_Category_Button.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.delete_Category_Button.Location = new System.Drawing.Point(335, 180);
             this.delete_Category_Button.Name = "delete_Category_Button";
@@ -106,7 +106,7 @@
             // 
             // update_Category_Button
             // 
-            this.update_Category_Button.BackColor = System.Drawing.Color.OliveDrab;
+            this.update_Category_Button.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.update_Category_Button.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.update_Category_Button.Location = new System.Drawing.Point(189, 180);
             this.update_Category_Button.Name = "update_Category_Button";
@@ -118,7 +118,7 @@
             // 
             // add_CategoryButton
             // 
-            this.add_CategoryButton.BackColor = System.Drawing.Color.OliveDrab;
+            this.add_CategoryButton.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.add_CategoryButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.add_CategoryButton.Location = new System.Drawing.Point(42, 180);
             this.add_CategoryButton.Name = "add_CategoryButton";

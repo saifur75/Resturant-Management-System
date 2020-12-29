@@ -39,8 +39,8 @@ namespace Resturant_Management_System.Presentation_Layer
 
         private void button1_Click(object sender, EventArgs e)
         {
-            foodCategory = new FoodCategory();
-            foodCategory.Show();
+            ViewCategory viewCategory  = new ViewCategory();
+            viewCategory.Show();
             this.Hide();
         }
 

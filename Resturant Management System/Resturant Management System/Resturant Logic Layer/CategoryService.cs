@@ -46,5 +46,6 @@ namespace Resturant_Management_System.Resturant_Logic_Layer
         {
             return this.categoryDataAccess.GetCategoryNames();
         }
+        
     }
 }
