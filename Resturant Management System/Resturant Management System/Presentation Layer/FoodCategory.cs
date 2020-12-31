@@ -14,15 +14,11 @@ namespace Resturant_Management_System.Presentation_Layer
     public partial class FoodCategory : Form
     {
         int id = 0;
-        public FoodCategory()
+        AdminFrom adminFrom;
+        public FoodCategory(AdminFrom adminFrom)
         {
             InitializeComponent();
-            add_CategoryButton.Click += this.Refresh;
-            add_CategoryButton.Click += this.Clear;
-            update_Category_Button.Click += this.Refresh;
-            update_Category_Button.Click += this.Clear;
-            delete_Category_Button.Click += this.Refresh;
-            delete_Category_Button.Click += this.Clear;
+            this.adminFrom = adminFrom;
         }
 
         private void FoodCategory_FormClosing(object sender, FormClosingEventArgs e)
@@ -43,6 +39,9 @@ namespace Resturant_Management_System.Presentation_Layer
                 if(result>0)
                 {
                     MessageBox.Show("Added successfully");
+                    this.Refresh(this, null);
+                    this.Clear(this, null);
+
                 }
                 else
                 {
@@ -71,6 +70,8 @@ namespace Resturant_Management_System.Presentation_Layer
                 if (result > 0)
                 {
                     MessageBox.Show("Update successfully");
+                    this.Refresh(this, null);
+                    this.Clear(this, null);
                 }
                 else
                 {
@@ -98,6 +99,8 @@ namespace Resturant_Management_System.Presentation_Layer
                 if (result > 0)
                 {
                     MessageBox.Show("Delete successfully");
+                    this.Refresh(this, null);
+                    this.Clear(this, null);
                 }
                 else
                 {
@@ -113,6 +116,19 @@ namespace Resturant_Management_System.Presentation_Layer
         void Clear(object sender, EventArgs e)
         {
             categoryName_TextBox.Text = string.Empty;
+        }
+
+        private void backToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            adminFrom.Show();
+            this.Hide();
+        }
+
+        private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LoginFrom loginFrom = new LoginFrom();
+            loginFrom.Show();
+            this.Hide();
         }
     }
 }

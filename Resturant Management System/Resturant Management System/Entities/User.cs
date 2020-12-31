@@ -17,5 +17,9 @@ namespace Resturant_Management_System.Entities
         public string Gender { get; set; }
         public string BloodGroup { get; set; }
         public string Post { get; set; }
+        public string JoingDate { get; set; }
+        public string MaritalStatus { get; set; }
+        public string Address { get; set; }
+        public double Salary { get; set; }
     }
 }

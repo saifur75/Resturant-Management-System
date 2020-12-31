@@ -26,3 +26,8 @@ F:\8th semester\git\Resturant-Management-System\Resturant Management System\Rest
 F:\8th semester\git\Resturant-Management-System\Resturant Management System\Resturant Management System\obj\Debug\Resturant_Management_System.Presentation_Layer.OrderFrom.resources
 F:\8th semester\git\Resturant-Management-System\Resturant Management System\Resturant Management System\obj\Debug\Resturant_Management_System.Presentation_Layer.ViewOrder.resources
 F:\8th semester\git\Resturant-Management-System\Resturant Management System\Resturant Management System\obj\Debug\Resturant_Management_System.Presentation_Layer.ViewCategory.resources
+F:\8th semester\git\Resturant-Management-System\Resturant Management System\Resturant Management System\obj\Debug\Resturant_Management_System.Presentation_Layer.PaymentFrom.resources
+F:\8th semester\git\Resturant-Management-System\Resturant Management System\Resturant Management System\obj\Debug\Resturant_Management_System.Presentation_Layer.FinancialFrom.resources
+F:\8th semester\git\Resturant-Management-System\Resturant Management System\Resturant Management System\obj\Debug\Resturant_Management_System.Presentation_Layer.AddEmployee.resources
+F:\8th semester\git\Resturant-Management-System\Resturant Management System\Resturant Management System\obj\Debug\Resturant_Management_System.Presentation_Layer.AdminFrom.resources
+F:\8th semester\git\Resturant-Management-System\Resturant Management System\Resturant Management System\obj\Debug\Resturant_Management_System.Presentation_Layer.BookingTableFrom.resources

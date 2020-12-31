@@ -58,7 +58,7 @@
             this.panel2.Controls.Add(this.manageWaiterButton);
             this.panel2.Location = new System.Drawing.Point(307, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(671, 464);
+            this.panel2.Size = new System.Drawing.Size(773, 492);
             this.panel2.TabIndex = 3;
             // 
             // button1
@@ -66,9 +66,9 @@
             this.button1.BackColor = System.Drawing.Color.PaleTurquoise;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button1.Location = new System.Drawing.Point(460, 135);
+            this.button1.Location = new System.Drawing.Point(527, 123);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(185, 100);
+            this.button1.Size = new System.Drawing.Size(205, 112);
             this.button1.TabIndex = 7;
             this.button1.Text = "Food Category";
             this.button1.UseVisualStyleBackColor = false;
@@ -89,7 +89,7 @@
             this.logOutButton.BackColor = System.Drawing.Color.Maroon;
             this.logOutButton.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.logOutButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.logOutButton.Location = new System.Drawing.Point(530, 19);
+            this.logOutButton.Location = new System.Drawing.Point(623, 17);
             this.logOutButton.Name = "logOutButton";
             this.logOutButton.Size = new System.Drawing.Size(126, 45);
             this.logOutButton.TabIndex = 5;
@@ -102,21 +102,22 @@
             this.billGenerateButton.BackColor = System.Drawing.Color.PaleTurquoise;
             this.billGenerateButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.billGenerateButton.ForeColor = System.Drawing.Color.DimGray;
-            this.billGenerateButton.Location = new System.Drawing.Point(459, 274);
+            this.billGenerateButton.Location = new System.Drawing.Point(527, 265);
             this.billGenerateButton.Name = "billGenerateButton";
-            this.billGenerateButton.Size = new System.Drawing.Size(186, 102);
+            this.billGenerateButton.Size = new System.Drawing.Size(205, 123);
             this.billGenerateButton.TabIndex = 4;
             this.billGenerateButton.Text = "Bill Generate";
             this.billGenerateButton.UseVisualStyleBackColor = false;
+            this.billGenerateButton.Click += new System.EventHandler(this.billGenerateButton_Click);
             // 
             // viewOrderButton
             // 
             this.viewOrderButton.BackColor = System.Drawing.Color.PaleTurquoise;
             this.viewOrderButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.viewOrderButton.ForeColor = System.Drawing.Color.DimGray;
-            this.viewOrderButton.Location = new System.Drawing.Point(59, 276);
+            this.viewOrderButton.Location = new System.Drawing.Point(63, 264);
             this.viewOrderButton.Name = "viewOrderButton";
-            this.viewOrderButton.Size = new System.Drawing.Size(185, 100);
+            this.viewOrderButton.Size = new System.Drawing.Size(199, 123);
             this.viewOrderButton.TabIndex = 3;
             this.viewOrderButton.Text = "View Order";
             this.viewOrderButton.UseVisualStyleBackColor = false;
@@ -127,9 +128,9 @@
             this.menuButton.BackColor = System.Drawing.Color.PaleTurquoise;
             this.menuButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuButton.ForeColor = System.Drawing.Color.DimGray;
-            this.menuButton.Location = new System.Drawing.Point(263, 135);
+            this.menuButton.Location = new System.Drawing.Point(287, 123);
             this.menuButton.Name = "menuButton";
-            this.menuButton.Size = new System.Drawing.Size(186, 100);
+            this.menuButton.Size = new System.Drawing.Size(213, 112);
             this.menuButton.TabIndex = 2;
             this.menuButton.Text = "Menu";
             this.menuButton.UseVisualStyleBackColor = false;
@@ -140,12 +141,13 @@
             this.tableButton.BackColor = System.Drawing.Color.PaleTurquoise;
             this.tableButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tableButton.ForeColor = System.Drawing.Color.DimGray;
-            this.tableButton.Location = new System.Drawing.Point(263, 276);
+            this.tableButton.Location = new System.Drawing.Point(287, 265);
             this.tableButton.Name = "tableButton";
-            this.tableButton.Size = new System.Drawing.Size(181, 100);
+            this.tableButton.Size = new System.Drawing.Size(213, 123);
             this.tableButton.TabIndex = 1;
             this.tableButton.Text = "Table";
             this.tableButton.UseVisualStyleBackColor = false;
+            this.tableButton.Click += new System.EventHandler(this.tableButton_Click);
             // 
             // manageWaiterButton
             // 
@@ -153,9 +155,9 @@
             this.manageWaiterButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.manageWaiterButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.manageWaiterButton.ForeColor = System.Drawing.Color.DimGray;
-            this.manageWaiterButton.Location = new System.Drawing.Point(63, 135);
+            this.manageWaiterButton.Location = new System.Drawing.Point(63, 123);
             this.manageWaiterButton.Name = "manageWaiterButton";
-            this.manageWaiterButton.Size = new System.Drawing.Size(181, 100);
+            this.manageWaiterButton.Size = new System.Drawing.Size(199, 112);
             this.manageWaiterButton.TabIndex = 0;
             this.manageWaiterButton.Text = "Manage Watier";
             this.manageWaiterButton.UseVisualStyleBackColor = false;
@@ -168,7 +170,7 @@
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Location = new System.Drawing.Point(2, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(299, 464);
+            this.panel1.Size = new System.Drawing.Size(299, 492);
             this.panel1.TabIndex = 2;
             // 
             // label1
@@ -185,7 +187,7 @@
             // myProfileButton
             // 
             this.myProfileButton.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.myProfileButton.Location = new System.Drawing.Point(18, 363);
+            this.myProfileButton.Location = new System.Drawing.Point(18, 390);
             this.myProfileButton.Name = "myProfileButton";
             this.myProfileButton.Size = new System.Drawing.Size(247, 55);
             this.myProfileButton.TabIndex = 1;
@@ -205,7 +207,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(979, 469);
+            this.ClientSize = new System.Drawing.Size(1092, 507);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "ManagerFrom";

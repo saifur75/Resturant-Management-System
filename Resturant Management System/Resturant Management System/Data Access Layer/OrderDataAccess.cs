@@ -45,5 +45,26 @@ namespace Resturant_Management_System.Data_Access_Layer
             string query = "DELETE FROM Orders WHERE Order_Id=" + id;
             return this.dataAccess.ExecuteQuery(query);
         }
+        public List<Order> OrderSearch(int orderId)
+        {
+            string query = "SELECT * FROM Orders WHERE Order_Id="+ orderId;
+            this.dataAccess = new DataAccess();
+            SqlDataReader reader = this.dataAccess.GetData(query);
+            List<Order> orders = new List<Order>();
+
+            while (reader.Read())
+            {
+                Order order = new Order();
+                order.Order_Id = (int)reader["Order_Id"];
+                order.Food_Name = reader["Food_Name"].ToString();
+                order.Quantity = (int)reader["Quantity"];
+                order.Total_Amount = (double)reader["Total_Amount"];
+                order.Date = reader["Date"].ToString();
+
+                orders.Add(order);
+            }
+            return orders;
+
+        }
     }
 }

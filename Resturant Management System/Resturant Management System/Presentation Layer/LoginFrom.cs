@@ -15,6 +15,7 @@ namespace Resturant_Management_System.Presentation_Layer
     {
         ManagerFrom mf;
         WaiterFrom wf;
+        AdminFrom adminFrom;
         public LoginFrom()
         {
             InitializeComponent();
@@ -32,22 +33,27 @@ namespace Resturant_Management_System.Presentation_Layer
 
             if (result)
             {
-                if (loginService.GetPost(userNameTextBox.Text).Equals("Manager"))
+                if (loginService.GetPost(userNameTextBox.Text).Equals("Admin"))
+                {
+                    MessageBox.Show("Login Successfully");
+                    string post = "Admin";
+                    adminFrom = new AdminFrom(this,userNameTextBox.Text,post);
+                    adminFrom.Show();
+                    this.Hide();
+                }
+                else if(loginService.GetPost(userNameTextBox.Text).Equals("Manager"))
                 {
                     MessageBox.Show("Login Successfully");
                     string post = "Manager";
-                    mf = new ManagerFrom(userNameTextBox.Text);
+                    mf = new ManagerFrom(this,userNameTextBox.Text,post);
                     mf.Show();
                     this.Hide();
                 }
-                else if(loginService.GetPost(userNameTextBox.Text).Equals("Admin"))
-                {
-
-                }
                 else if (loginService.GetPost(userNameTextBox.Text).Equals("Waiter"))
                 {
+                    string post = "Waiter";
                     MessageBox.Show("Login Successfully");
-                    wf = new WaiterFrom(userNameTextBox.Text);
+                    wf = new WaiterFrom(this,userNameTextBox.Text,post);
                     wf.Show();
                     this.Hide();
                 }

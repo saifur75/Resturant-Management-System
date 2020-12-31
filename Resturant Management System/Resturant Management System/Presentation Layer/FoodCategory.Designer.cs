@@ -38,6 +38,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.backToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.category_Load_DataGridView)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -48,12 +50,12 @@
             this.category_Load_DataGridView.AllowUserToAddRows = false;
             this.category_Load_DataGridView.AllowUserToDeleteRows = false;
             this.category_Load_DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.category_Load_DataGridView.Location = new System.Drawing.Point(489, 74);
+            this.category_Load_DataGridView.Location = new System.Drawing.Point(517, 71);
             this.category_Load_DataGridView.Name = "category_Load_DataGridView";
             this.category_Load_DataGridView.ReadOnly = true;
             this.category_Load_DataGridView.RowHeadersWidth = 51;
             this.category_Load_DataGridView.RowTemplate.Height = 24;
-            this.category_Load_DataGridView.Size = new System.Drawing.Size(333, 224);
+            this.category_Load_DataGridView.Size = new System.Drawing.Size(342, 268);
             this.category_Load_DataGridView.TabIndex = 0;
             this.category_Load_DataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.category_Load_DataGridView_CellClick);
             // 
@@ -133,7 +135,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Cambria", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(485, 38);
+            this.label2.Location = new System.Drawing.Point(524, 46);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(137, 22);
             this.label2.TabIndex = 4;
@@ -146,22 +148,39 @@
             this.fileToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(851, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(903, 28);
             this.menuStrip1.TabIndex = 5;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // fileToolStripMenuItem
             // 
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.backToolStripMenuItem,
+            this.logOutToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
             this.fileToolStripMenuItem.Text = "File";
+            // 
+            // backToolStripMenuItem
+            // 
+            this.backToolStripMenuItem.Name = "backToolStripMenuItem";
+            this.backToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.backToolStripMenuItem.Text = "Back";
+            this.backToolStripMenuItem.Click += new System.EventHandler(this.backToolStripMenuItem_Click);
+            // 
+            // logOutToolStripMenuItem
+            // 
+            this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
+            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.logOutToolStripMenuItem.Text = "Log Out";
+            this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click);
             // 
             // FoodCategory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(851, 364);
+            this.ClientSize = new System.Drawing.Size(903, 381);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.category_Load_DataGridView);
             this.Controls.Add(this.groupBox1);
@@ -193,5 +212,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem backToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem logOutToolStripMenuItem;
     }
 }

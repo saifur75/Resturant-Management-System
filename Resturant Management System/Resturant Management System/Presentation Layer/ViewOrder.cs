@@ -13,12 +13,12 @@ namespace Resturant_Management_System.Presentation_Layer
 {
     public partial class ViewOrder : Form
     {
-        ManagerFrom mf;
+        ManagerFrom managerFrom;
         string post;
-        public ViewOrder(ManagerFrom mf,string post)
+        public ViewOrder(ManagerFrom managerFrom,string post)
         {
             InitializeComponent();
-            this.mf = mf;
+            this.managerFrom = managerFrom;
             this.post = post;
         }
 
@@ -37,16 +37,8 @@ namespace Resturant_Management_System.Presentation_Layer
 
         private void backToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (post.Equals("Admin"))
-            {
-                //mf.Show();
-                //this.Hide();
-            }
-            else
-            {
-                mf.Show();
-                this.Hide();
-            }
+            managerFrom.Show();
+            this.Hide();
         }
 
         private void ViewOrder_FormClosing(object sender, FormClosingEventArgs e)

@@ -33,6 +33,7 @@
             this.myProfileButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.logOutButton = new System.Windows.Forms.Button();
             this.takeOrderButton = new System.Windows.Forms.Button();
             this.MenuButton = new System.Windows.Forms.Button();
@@ -88,6 +89,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.logOutButton);
             this.panel2.Controls.Add(this.takeOrderButton);
             this.panel2.Controls.Add(this.MenuButton);
@@ -96,6 +98,19 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(608, 472);
             this.panel2.TabIndex = 2;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.button1.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Location = new System.Drawing.Point(87, 157);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(233, 95);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Food Category";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // logOutButton
             // 
@@ -115,7 +130,7 @@
             this.takeOrderButton.BackColor = System.Drawing.Color.LightSeaGreen;
             this.takeOrderButton.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.takeOrderButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.takeOrderButton.Location = new System.Drawing.Point(326, 189);
+            this.takeOrderButton.Location = new System.Drawing.Point(87, 290);
             this.takeOrderButton.Name = "takeOrderButton";
             this.takeOrderButton.Size = new System.Drawing.Size(233, 95);
             this.takeOrderButton.TabIndex = 4;
@@ -128,7 +143,7 @@
             this.MenuButton.BackColor = System.Drawing.Color.LightSeaGreen;
             this.MenuButton.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MenuButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.MenuButton.Location = new System.Drawing.Point(53, 189);
+            this.MenuButton.Location = new System.Drawing.Point(334, 157);
             this.MenuButton.Name = "MenuButton";
             this.MenuButton.Size = new System.Drawing.Size(232, 95);
             this.MenuButton.TabIndex = 3;
@@ -178,5 +193,6 @@
         private System.Windows.Forms.Button takeOrderButton;
         private System.Windows.Forms.Button MenuButton;
         private System.Windows.Forms.Label welcomeLabel;
+        private System.Windows.Forms.Button button1;
     }
 }

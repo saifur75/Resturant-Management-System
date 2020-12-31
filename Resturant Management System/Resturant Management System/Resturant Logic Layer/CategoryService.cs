@@ -46,6 +46,10 @@ namespace Resturant_Management_System.Resturant_Logic_Layer
         {
             return this.categoryDataAccess.GetCategoryNames();
         }
+        public List<Menu1> GetMenuByCategory(string categoryName)
+        {
+            return this.categoryDataAccess.GetProductByCategory(categoryName);
+        }
         
     }
 }

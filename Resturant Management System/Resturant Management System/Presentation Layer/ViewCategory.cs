@@ -13,11 +13,21 @@ namespace Resturant_Management_System.Presentation_Layer
 {
     public partial class ViewCategory : Form
     {
-        public ViewCategory()
+        ManagerFrom managerFrom;
+        WaiterFrom waiterFrom;
+        string post;
+        public ViewCategory(ManagerFrom managerFrom,string post)
         {
             InitializeComponent();
+            this.managerFrom = managerFrom;
+            this.post = post;
         }
-
+        public ViewCategory(WaiterFrom waiterFrom, string post)
+        {
+            InitializeComponent();
+            this.waiterFrom = waiterFrom;
+            this.post = post;
+        }
         private void ViewCategory_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
@@ -43,9 +53,16 @@ namespace Resturant_Management_System.Presentation_Layer
 
         private void backToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ManagerFrom managerFrom = new ManagerFrom();
-            managerFrom.Show();
-            this.Hide();
+            if(post.Equals("Manager"))
+            { 
+                managerFrom.Show();
+                this.Hide();
+            }
+            else
+            {
+                waiterFrom.Show();
+                this.Hide();
+            }      
         }
     }
 }

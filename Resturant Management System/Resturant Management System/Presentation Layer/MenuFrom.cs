@@ -15,8 +15,15 @@ namespace Resturant_Management_System.Presentation_Layer
     {
         ManagerFrom mf;
         WaiterFrom wf;
+        AdminFrom adminFrom;
         string post;
         int foodId = 0;
+        public MenuFrom(AdminFrom adminFrom, string post)
+        {
+            InitializeComponent();
+            this.adminFrom = adminFrom;
+            this.post = post;
+        }
         public MenuFrom(ManagerFrom mf,string post)
         {
             InitializeComponent();
@@ -56,6 +63,7 @@ namespace Resturant_Management_System.Presentation_Layer
             foodNameTextBox.Text= food_ListDataGridView.Rows[e.RowIndex].Cells[1].Value.ToString();
             priceTextBox.Text= food_ListDataGridView.Rows[e.RowIndex].Cells[2].Value.ToString();
             statusTextBox.Text= food_ListDataGridView.Rows[e.RowIndex].Cells[3].Value.ToString();
+            categoryName_ComboBox.Text = food_ListDataGridView.Rows[e.RowIndex].Cells[4].Value.ToString();
             
         }
 
@@ -151,9 +159,9 @@ namespace Resturant_Management_System.Presentation_Layer
                 mf.Show();
                 this.Hide();
             }
-            else if(post.Equals("Waiter"))
+            else
             {
-                wf.Show();
+                adminFrom.Show();
                 this.Hide();
             }
 
@@ -164,6 +172,11 @@ namespace Resturant_Management_System.Presentation_Layer
             LoginFrom loginFrom = new LoginFrom();
             loginFrom.Show();
             this.Hide();
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
         }
     }
 }

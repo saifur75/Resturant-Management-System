@@ -15,9 +15,24 @@ namespace Resturant_Management_System.Presentation_Layer
     {
         int foodId = 0;
         string post;
+        AdminFrom adminFrom;
+        WaiterFrom waiterFrom;
+
         public OrderFrom()
         {
             InitializeComponent();
+        }
+        public OrderFrom(AdminFrom adminFrom,string post)
+        {
+            InitializeComponent();
+            this.adminFrom = adminFrom;
+            this.post = post;
+        }
+        public OrderFrom(WaiterFrom waiterFrom, string post)
+        {
+            InitializeComponent();
+            this.waiterFrom = waiterFrom;
+            this.post = post;
         }
 
         private void OrderFrom_FormClosing(object sender, FormClosingEventArgs e)
@@ -31,6 +46,8 @@ namespace Resturant_Management_System.Presentation_Layer
             menu_DataGridView.DataSource = menuService.GetAllFood();
             OrderService orderService = new OrderService();
             order_DataGridView.DataSource = orderService.GetAllOrder();
+            CategoryService categoryService = new CategoryService();
+            categoryName_ComboBox.DataSource = categoryService.GetCategoryNameList();
 
         }
 
@@ -46,18 +63,6 @@ namespace Resturant_Management_System.Presentation_Layer
             priceTextBox.Text = menu_DataGridView.Rows[e.RowIndex].Cells[2].Value.ToString();
         }
 
-        private void button7_Click(object sender, EventArgs e)
-        {
-            if (quantity_TextBox.Text != "")
-            {
-                int text = (Convert.ToInt32(priceTextBox.Text)) * (Convert.ToInt32(quantity_TextBox.Text));
-                total_Price_TextBox.Text = text.ToString();
-            }
-            else
-            {
-                MessageBox.Show("Give the quantity");
-            }
-        }
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -104,14 +109,10 @@ namespace Resturant_Management_System.Presentation_Layer
             this.Hide();
         }
 
-        private void backToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            if(foodNameTextBox2.Text =="")
+            if (foodNameTextBox2.Text == "")
             {
                 MessageBox.Show("Fill up the required from");
             }
@@ -119,7 +120,7 @@ namespace Resturant_Management_System.Presentation_Layer
             {
                 OrderService orderService = new OrderService();
                 int result = orderService.DeleteOrder(foodId);
-                if(result>0)
+                if (result > 0)
                 {
                     MessageBox.Show("Order delete successfully");
                     this.Refresh1(this, null);
@@ -135,13 +136,46 @@ namespace Resturant_Management_System.Presentation_Layer
         private void order_DataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             foodId = (int)order_DataGridView.Rows[e.RowIndex].Cells[0].Value;
-            foodNameTextBox2.Text= order_DataGridView.Rows[e.RowIndex].Cells[1].Value.ToString();
-            total_Amount_TextBox.Text= order_DataGridView.Rows[e.RowIndex].Cells[3].Value.ToString();
+            foodNameTextBox2.Text = order_DataGridView.Rows[e.RowIndex].Cells[1].Value.ToString();
+            total_Amount_TextBox.Text = order_DataGridView.Rows[e.RowIndex].Cells[3].Value.ToString();
         }
         void Refresh1(object sender, EventArgs e)
         {
             OrderService orderService = new OrderService();
             order_DataGridView.DataSource = orderService.GetAllOrder();
+        }
+
+        private void quantity_TextBox_TextChanged(object sender, EventArgs e)
+        {
+            if(quantity_TextBox.Text=="")
+            {              
+                total_Price_TextBox.Text = "";
+            }
+            else
+            {
+                int text = (Convert.ToInt32(priceTextBox.Text)) * (Convert.ToInt32(quantity_TextBox.Text));
+                total_Price_TextBox.Text = text.ToString();
+            }            
+        }
+
+        private void comboBox1_TextChanged(object sender, EventArgs e)
+        {
+            CategoryService categoryService = new CategoryService();
+            menu_DataGridView.DataSource = categoryService.GetMenuByCategory(categoryName_ComboBox.Text);
+        }
+
+        private void backToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (post.Equals("Admin"))
+            {
+                adminFrom.Show();
+                this.Hide();
+            }
+            else
+            {
+                waiterFrom.Show();
+                this.Hide();
+            }
         }
     }
 }

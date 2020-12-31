@@ -41,7 +41,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.order_DataGridView = new System.Windows.Forms.DataGridView();
             this.menu_DataGridView = new System.Windows.Forms.DataGridView();
@@ -52,6 +51,8 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.categoryName_ComboBox = new System.Windows.Forms.ComboBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -97,6 +98,7 @@
             this.quantity_TextBox.Name = "quantity_TextBox";
             this.quantity_TextBox.Size = new System.Drawing.Size(301, 27);
             this.quantity_TextBox.TabIndex = 21;
+            this.quantity_TextBox.TextChanged += new System.EventHandler(this.quantity_TextBox_TextChanged);
             // 
             // priceTextBox
             // 
@@ -193,35 +195,22 @@
             this.button5.ForeColor = System.Drawing.SystemColors.Control;
             this.button5.Location = new System.Drawing.Point(187, 211);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(301, 61);
+            this.button5.Size = new System.Drawing.Size(301, 54);
             this.button5.TabIndex = 12;
             this.button5.Text = "Delete order";
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.Color.OliveDrab;
-            this.button7.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button7.Location = new System.Drawing.Point(890, 344);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(170, 51);
-            this.button7.TabIndex = 8;
-            this.button7.Text = "Total price";
-            this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.OliveDrab;
             this.button2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button2.Location = new System.Drawing.Point(367, 312);
+            this.button2.Location = new System.Drawing.Point(237, 299);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(171, 51);
+            this.button2.Size = new System.Drawing.Size(301, 51);
             this.button2.TabIndex = 7;
-            this.button2.Text = "Add to order";
+            this.button2.Text = "Add  Order";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -244,12 +233,12 @@
             this.menu_DataGridView.AllowUserToAddRows = false;
             this.menu_DataGridView.AllowUserToDeleteRows = false;
             this.menu_DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.menu_DataGridView.Location = new System.Drawing.Point(6, 72);
+            this.menu_DataGridView.Location = new System.Drawing.Point(6, 103);
             this.menu_DataGridView.Name = "menu_DataGridView";
             this.menu_DataGridView.ReadOnly = true;
             this.menu_DataGridView.RowHeadersWidth = 51;
             this.menu_DataGridView.RowTemplate.Height = 24;
-            this.menu_DataGridView.Size = new System.Drawing.Size(685, 273);
+            this.menu_DataGridView.Size = new System.Drawing.Size(685, 252);
             this.menu_DataGridView.TabIndex = 4;
             this.menu_DataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.menu_DataGridView_CellClick);
             // 
@@ -276,7 +265,7 @@
             // searchTextBox
             // 
             this.searchTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchTextBox.Location = new System.Drawing.Point(6, 39);
+            this.searchTextBox.Location = new System.Drawing.Point(0, 70);
             this.searchTextBox.Name = "searchTextBox";
             this.searchTextBox.Size = new System.Drawing.Size(581, 27);
             this.searchTextBox.TabIndex = 27;
@@ -285,9 +274,9 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(593, 39);
+            this.button1.Location = new System.Drawing.Point(587, 70);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(98, 26);
+            this.button1.Size = new System.Drawing.Size(98, 34);
             this.button1.TabIndex = 28;
             this.button1.Text = "Search";
             this.button1.UseVisualStyleBackColor = true;
@@ -320,16 +309,36 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.label8);
+            this.groupBox3.Controls.Add(this.categoryName_ComboBox);
             this.groupBox3.Controls.Add(this.button1);
             this.groupBox3.Controls.Add(this.menu_DataGridView);
             this.groupBox3.Controls.Add(this.searchTextBox);
             this.groupBox3.Font = new System.Drawing.Font("Cambria", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(12, 46);
+            this.groupBox3.Location = new System.Drawing.Point(12, 44);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(700, 359);
+            this.groupBox3.Size = new System.Drawing.Size(700, 361);
             this.groupBox3.TabIndex = 31;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Menu List";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(144, 38);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(126, 22);
+            this.label8.TabIndex = 30;
+            this.label8.Text = "Food Category";
+            // 
+            // categoryName_ComboBox
+            // 
+            this.categoryName_ComboBox.FormattingEnabled = true;
+            this.categoryName_ComboBox.Location = new System.Drawing.Point(276, 35);
+            this.categoryName_ComboBox.Name = "categoryName_ComboBox";
+            this.categoryName_ComboBox.Size = new System.Drawing.Size(300, 29);
+            this.categoryName_ComboBox.TabIndex = 29;
+            this.categoryName_ComboBox.TextChanged += new System.EventHandler(this.comboBox1_TextChanged);
             // 
             // groupBox4
             // 
@@ -376,14 +385,14 @@
             // backToolStripMenuItem
             // 
             this.backToolStripMenuItem.Name = "backToolStripMenuItem";
-            this.backToolStripMenuItem.Size = new System.Drawing.Size(145, 26);
+            this.backToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.backToolStripMenuItem.Text = "Back";
             this.backToolStripMenuItem.Click += new System.EventHandler(this.backToolStripMenuItem_Click);
             // 
             // logOutToolStripMenuItem
             // 
             this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
-            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(145, 26);
+            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.logOutToolStripMenuItem.Text = "Log Out";
             this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click_1);
             // 
@@ -393,7 +402,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.ClientSize = new System.Drawing.Size(1354, 794);
-            this.Controls.Add(this.button7);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox3);
@@ -436,7 +444,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DataGridView order_DataGridView;
         private System.Windows.Forms.DataGridView menu_DataGridView;
@@ -452,5 +459,7 @@
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem backToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem logOutToolStripMenuItem;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ComboBox categoryName_ComboBox;
     }
 }

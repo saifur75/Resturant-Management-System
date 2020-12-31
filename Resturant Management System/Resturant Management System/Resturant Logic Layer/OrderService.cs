@@ -35,5 +35,10 @@ namespace Resturant_Management_System.Resturant_Logic_Layer
         {
             return this.orderDataAccess.DeleteOrder(id);
         }
+        public List<Order> OrderSearch(string orderId)
+        {
+            int order = Convert.ToInt32( orderId);
+            return this.orderDataAccess.OrderSearch(order);
+        }
     }
 }
